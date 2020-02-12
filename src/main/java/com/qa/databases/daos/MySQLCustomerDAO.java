@@ -54,6 +54,7 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 			Statement statement = connection.createStatement();
 			statement
 					.executeUpdate("INSERT INTO Customers(firstName,lastName) VALUES(\"" + first + "\",\"" + last + "\");");
+			statement.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -73,10 +74,11 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 				String last = Utils.INPUT.nextLine();
 				statement.executeUpdate("UPDATE Customers SET firstName = \"" + first + "\", lastName = \"" + last
 						+ "\" WHERE ID= " + ID + ";");
+				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}UD.closeConnection();
 	}
 
 	public void delete() {
@@ -88,10 +90,11 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 				int ID = Utils.INPUT2.nextInt();
 				Statement statement = connection.createStatement();
 				statement.executeUpdate("DELETE FROM Customers WHERE ID = " + ID + ";");
+				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}UD.closeConnection();
 	}
 
 	public ResultSet read() {
@@ -105,6 +108,7 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 				String lastName = resultSet.getString("lastName");
 				System.out.println(ID +" | "+ firstName +" | "+ lastName);
 			}
+			statement.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

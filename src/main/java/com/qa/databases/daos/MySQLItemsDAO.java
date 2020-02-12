@@ -47,19 +47,18 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
 				System.out.println("Price:");
 				float price = Utils.INPUT3.nextFloat();
 				Statement statement = connection.createStatement();
-				statement.executeUpdate("INSERT INTO Items (iName,quantity,price) VALUES( \"" + name + "\", "+ price + ");");
+				statement.executeUpdate("INSERT INTO Items (iName,price) VALUES( \"" + name + "\", "+ price + ");");
+				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}UD.closeConnection();
 	}
 
 	public void update() {
 		MySQLUsersDAO UD = new MySQLUsersDAO(name, pWord);
 		if (UD.authenticate()) {
-
 			try {
-				
 				System.out.println("Item ID:");
 				int ID = Utils.INPUT2.nextInt();
 				System.out.println("New Item name:");
@@ -69,10 +68,11 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
 				Statement statement = connection.createStatement();
 				statement.executeUpdate("UPDATE Items(name,price) SET iName = \"" + name + "\", price = " + price
 						+ " WHERE ID= " + ID + ";");
+				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}UD.closeConnection();
 	}
 
 	public void delete() {
@@ -84,10 +84,11 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
 				int ID = Utils.INPUT2.nextInt();
 				Statement statement = connection.createStatement();
 				statement.executeUpdate("DELETE FROM Items WHERE ID = " + ID + ";");
+				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}UD.closeConnection();
 	}
 
 	public ResultSet read() {
@@ -100,8 +101,7 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
 				String name = resultSet.getString("iName");
 				String price = resultSet.getString("price");
 				System.out.println(ID +" | "+ name + " | " + price);
-				return resultSet;
-			}
+			}statement.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
