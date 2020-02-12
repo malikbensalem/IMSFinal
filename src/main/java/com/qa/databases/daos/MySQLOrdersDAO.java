@@ -41,8 +41,7 @@ public class MySQLOrdersDAO implements CreateReturn {
     }
 
     public void addTotal(int ordersID) {//ordersid be where?
-        try {
-            Statement statement = connection.createStatement();
+        try (Statement statement=connection.createStatement()){
             statement.executeUpdate(
                     "UPDATE Orders SET total= (SELECT sum(price) FROM OrderedItems, Items WHERE OrderedItems.ordersID = "+ordersID+") WHERE ID = "+ ordersID);
             statement.executeUpdate("UPDATE Orders SET total = IF ( total>10000, total*9/10, total) WHERE ID = "+ordersID);
@@ -53,10 +52,9 @@ public class MySQLOrdersDAO implements CreateReturn {
 
     public int create() {
         int ID = 0;
-        try {
+        try (Statement statement=connection.createStatement()){
             System.out.println("customerID:");
             int customersID = Utils.INPUT2.nextInt();
-            Statement statement = connection.createStatement();
             statement.executeUpdate("INSERT INTO Orders(customersID) VALUES(" + customersID + ");");
             ResultSet resultSet= statement.executeQuery("SELECT * FROM Orders");
             //int ID = 0;//resultSet.getInt("ID");
