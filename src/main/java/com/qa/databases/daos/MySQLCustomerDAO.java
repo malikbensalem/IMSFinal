@@ -1,3 +1,6 @@
+//close everything
+//make everything at the start
+
 package com.qa.databases.daos;
 
 import com.qa.databases.Utils;
@@ -93,8 +96,11 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 				statement.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
+			}finally {
+				UD.closeConnection();
+				statement.close
 			}
-		}UD.closeConnection();
+		}
 	}
 
 	public ResultSet read() {
