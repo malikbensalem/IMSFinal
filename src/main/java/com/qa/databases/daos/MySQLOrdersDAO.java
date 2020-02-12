@@ -24,7 +24,14 @@ public class MySQLOrdersDAO implements CreateReturn {
             e.printStackTrace();
         }
     }
-
+    public void closeConnection() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
     public MySQLOrdersDAO(String name, String pWord) {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);

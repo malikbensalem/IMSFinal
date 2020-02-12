@@ -44,54 +44,71 @@ public class Control {
 		if (f.equals("11")) {
 			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);
 			custConnection.create();
-
+			custConnection.closeConnection();
 		} else if (f.equals("12")) {
 			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);
 			custConnection.read();
+			custConnection.closeConnection();
 		} else if (f.equals("13")) {
 			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);
 			custConnection.update();
+			custConnection.closeConnection();
 		} else if (f.equals("14")) {
 			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);
 			custConnection.delete();
+			custConnection.closeConnection();
 		} else if (f.equals("21")) {
-			MySQLItemsDAO ItemConnection = new MySQLItemsDAO(name, pWord);
-			ItemConnection.create();
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);
+			itemConnection.create();
+			itemConnection.closeConnection();
 		} else if (f.equals("22")) {
-			MySQLItemsDAO ItemConnection = new MySQLItemsDAO(name, pWord);
-			ItemConnection.read();
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);
+			itemConnection.read();
+			itemConnection.closeConnection();
 		} else if (f.equals("23")) {
-			MySQLItemsDAO ItemConnection = new MySQLItemsDAO(name, pWord);
-			ItemConnection.update();
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);
+			itemConnection.update();
+			itemConnection.closeConnection();
 		} else if (f.equals("24")) {
-			MySQLItemsDAO ItemConnection = new MySQLItemsDAO(name, pWord);
-			ItemConnection.delete();
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);
+			itemConnection.delete();
+			itemConnection.closeConnection();			
 		} else if (f.equals("31")) {
 			MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);
 			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
 			orderConnection.addTotal(oiConnection.create(orderConnection.create()));
+			oiConnection.closeConnection();
+			orderConnection.closeConnection();
 		} else if (f.equals("32")) {
 			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
 			oiConnection.read();
+			oiConnection.closeConnection();
 		} else if (f.equals("33")) {
 			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
 			MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);
 			orderConnection.addTotal(oiConnection.update());
+			oiConnection.closeConnection();
+			orderConnection.closeConnection();
 		} else if (f.equals("34")) {
 			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
 			oiConnection.delete();
+			oiConnection.closeConnection();
 		} else if (f.equals("41")) {
 			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);
 			userConnection.create();
+			userConnection.closeConnection();
 		} else if (f.equals("42")) {
 			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);
 			userConnection.read();
+			userConnection.closeConnection();
 		} else if (f.equals("43")) {
 			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);
 			userConnection.update();
+			userConnection.closeConnection();
 		} else if (f.equals("44")) {
 			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);
 			userConnection.delete();
+			userConnection.closeConnection();
 		}
 	}
 }

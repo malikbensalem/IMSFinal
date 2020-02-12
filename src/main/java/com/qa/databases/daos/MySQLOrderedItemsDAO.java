@@ -14,6 +14,14 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
 	private Connection connection;
 	String name;
 	String pWord;
+	public void closeConnection() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public MySQLOrderedItemsDAO() {
 
 		System.out.println("User:");

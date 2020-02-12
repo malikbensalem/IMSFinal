@@ -26,7 +26,14 @@ public class MySQLCustomerDAO implements Create, Read, Update, Delete {
 			e.printStackTrace();
 		}
 	}
-
+	public void closeConnection() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public MySQLCustomerDAO(String name, String pWord) {
 		this.name = name;
 		this.pWord = pWord;
