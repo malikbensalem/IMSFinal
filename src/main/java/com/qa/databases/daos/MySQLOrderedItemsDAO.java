@@ -1,10 +1,10 @@
 package com.qa.databases.daos;
 
-import com.qa.databases.Utils;
 import com.qa.databases.interfaces.CreateParam;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.UpdateReturn;
+import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
 
@@ -15,7 +15,6 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
     private Connection connection;
 
     public MySQLOrderedItemsDAO() {
-
         System.out.println("User:");
         String name = Utils.INPUT.nextLine();
         System.out.println("password:");

@@ -2,18 +2,16 @@
 
 package com.qa.databases.daos;
 
-import com.qa.databases.Utils;
+import com.qa.databases.persistances.Utils;
 import com.qa.databases.interfaces.CreateReturn;
 
 import java.sql.*;
-import java.util.Scanner;
 
 public class MySQLOrdersDAO implements CreateReturn {
 
     private Connection connection;
 
     public MySQLOrdersDAO() {
-    	
         System.out.println("User:");
         String name = Utils.INPUT.nextLine();
         System.out.println("password:");

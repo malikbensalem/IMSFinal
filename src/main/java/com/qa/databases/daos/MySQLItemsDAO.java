@@ -1,6 +1,6 @@
 package com.qa.databases.daos;
 
-import com.qa.databases.Utils;
+import com.qa.databases.persistances.Utils;
 import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;

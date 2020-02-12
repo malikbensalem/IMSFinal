@@ -1,10 +1,10 @@
 package com.qa.databases.daos;
 
-import com.qa.databases.Utils;
 import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
+import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
 
@@ -12,7 +12,6 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
     private Connection connection;
 
     public MySQLUsersDAO() {
-
         System.out.println("User:");
         String name = Utils.INPUT.nextLine();
         System.out.println("password:");
