@@ -1,19 +1,27 @@
 package com.qa.databases.daos;
 
-import com.qa.databases.persistances.Utils;
 import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
+import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
 import java.util.Scanner;
+
+/**
+ * this class allows a connection between java and the Items' table
+ */
 
 public class MySQLItemsDAO implements Create, Read, Update, Delete {
     private Connection connection;
     private String name;
     private String pWord;
 
+
+    /**
+     * use this constructor if this is your first connection to the database during the run
+     */
     public MySQLItemsDAO() {
         System.out.println("User:");
         this.name = Utils.INPUT.nextLine();
@@ -26,6 +34,13 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * use this constructor if you have already got access to the database
+     *
+     * @param name  - database name
+     * @param pWord - database password
+     */
+
     public MySQLItemsDAO(String name, String pWord) {
         this.name = name;
         this.pWord = pWord;
@@ -36,6 +51,10 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * adds an item to the database
+     * (authorisation needed)
+     */
     public void create() {
         MySQLUsersDAO UD = new MySQLUsersDAO(name, pWord);
         if (UD.authenticate()) {
@@ -53,6 +72,10 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         UD.closeConnection();
     }
 
+    /**
+     * allows you change the name and a price of an item
+     * (authorisation needed)
+     */
     public void update() {
         MySQLUsersDAO UD = new MySQLUsersDAO(name, pWord);
         if (UD.authenticate()) {
@@ -72,6 +95,10 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         UD.closeConnection();
     }
 
+    /**
+     * allows you to delete an item in the database
+     * (authorisation needed)
+     */
     public void delete() {
         MySQLUsersDAO UD = new MySQLUsersDAO(name, pWord);
         if (UD.authenticate()) {
@@ -86,6 +113,11 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         UD.closeConnection();
     }
 
+    /**
+     * allows poeple to see all items in the database
+     *
+     * @return - Items' table
+     */
     public ResultSet read() {
         ResultSet resultSet = null;
         try (Statement statement = connection.createStatement()) {
@@ -101,6 +133,10 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
         }
         return resultSet;
     }
+
+    /**
+     * closes this DAO down when called
+     */
 
     public void closeConnection() {
         try {

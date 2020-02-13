@@ -8,9 +8,17 @@ import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
 
+/**
+ * this class allows a connection between java and the Users' table
+ * (all methods in this class need authorisation by a user)
+ */
+
 public class MySQLUsersDAO implements Create, Read, Update, Delete {
     private Connection connection;
 
+    /**
+     * use this constructor if this is your first connection to the database during the run
+     */
     public MySQLUsersDAO() {
         System.out.println("User:");
         String name = Utils.INPUT.nextLine();
@@ -23,6 +31,12 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * use this constructor if you have already got access to the database
+     *
+     * @param name  - database name
+     * @param pWord - database password
+     */
     public MySQLUsersDAO(String name, String pWord) {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
@@ -31,6 +45,9 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * needs a verified user to return true
+     */
     public boolean authenticate() {
         System.out.println("Admin User:");
         String name = Utils.INPUT.nextLine();
@@ -47,6 +64,9 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         return false;
     }
 
+    /**
+     * adds a user into the database
+     */
     public void create() {
         if (authenticate()) {
             try (Statement statement = connection.createStatement()) {
@@ -62,6 +82,9 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * allows user to change password
+     */
     public void update() {
         if (authenticate()) {
             try (Statement statement = connection.createStatement()) {
@@ -77,6 +100,9 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * closes this DAO down when called
+     */
     public void closeConnection() {
         try {
             connection.close();
@@ -85,6 +111,9 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * deletes a user from the database
+     */
     public void delete() {
         if (authenticate()) {
             try (Statement statement = connection.createStatement()) {
@@ -97,6 +126,11 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         }
     }
 
+    /**
+     * allows users to see other users on the database
+     *
+     * @return - the users table
+     */
     public ResultSet read() {
         ResultSet resultSet = null;
         if (authenticate()) {

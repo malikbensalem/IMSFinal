@@ -2,17 +2,25 @@ package com.qa.databases.daos;
 
 import com.qa.databases.interfaces.CreateParam;
 import com.qa.databases.interfaces.Delete;
-import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.UpdateReturn;
 import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
 
-public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, Delete {
+/**
+ * this class allows a connection between java and the OrderedItems' table
+ */
+
+public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
 
     String name;
     String pWord;
     private Connection connection;
+
+
+    /**
+     * use this constructor if this is your first connection to the database during the run
+     */
 
     public MySQLOrderedItemsDAO() {
         System.out.println("User:");
@@ -28,6 +36,13 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
         }
     }
 
+    /**
+     * use this constructor if you have already got access to the database
+     *
+     * @param name  - database name
+     * @param pWord - database password
+     */
+
     public MySQLOrderedItemsDAO(String name, String pWord) {
         this.name = name;
         this.pWord = pWord;
@@ -38,6 +53,10 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
         }
     }
 
+    /**
+     * closes this DAO down when called
+     */
+
     public void closeConnection() {
         try {
             connection.close();
@@ -46,6 +65,12 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
         }
     }
 
+    /**
+     * allows customers to add orders to there basket
+     *
+     * @param ordersID - this will be order number of the order
+     * @return - this will return the OrdersID so that total amount can be calculated for this specific order
+     */
     public int create(int ordersID) {
         int itemsID = -1;
         try (Statement statement = connection.createStatement()) {
@@ -65,22 +90,35 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
         return ordersID;
     }
 
+    /**
+     * shows the details of a specific order that a customer has made
+     *
+     * @return - specific customer's order
+     */
     public ResultSet read() {
         ResultSet resultSet = null;
         try (Statement statement = connection.createStatement()) {
+            System.out.println("OrderID:");
+            int oID = Utils.INPUT2.nextInt();
             resultSet = statement
-                    .executeQuery("SELECT * FROM Orders;");
+                    .executeQuery("SELECT * FROM OrderedItems WHERE ordersID = " + oID + ";");
             while (resultSet.next()) {
                 int ID = resultSet.getInt("ID");
-                String custID = resultSet.getString("customersID");
-                String total = resultSet.getString("total");
-                System.out.println(ID + " | " + custID + " | " + total);
+                int custID = resultSet.getInt("customersID");
+                int ordersID = resultSet.getInt("total");
+                System.out.println(ID + " | " + custID + " | " + ordersID);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         return resultSet;
     }
+
+    /**
+     * allows customer to change there item
+     *
+     * @return
+     */
 
     public int update() {
         int ordersID = -1;
@@ -99,6 +137,9 @@ public class MySQLOrderedItemsDAO implements CreateParam, Read, UpdateReturn, De
         return ordersID;
     }
 
+    /**
+     * deletes an item from an order
+     */
     public void delete() {
         try (Statement statement = connection.createStatement()) {
             System.out.println("OrderID:");

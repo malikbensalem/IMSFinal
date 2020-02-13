@@ -5,11 +5,18 @@ import com.qa.databases.daos.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+/**
+ * this is the menu of the system
+ */
+
 public class Control {
     private String name;
     private String pWord;
     private Connection connection;
 
+    /**
+     * use this constructor if this is your first connection to the database during the run
+     */
     public Control() {
         System.out.println("User:");
         this.name = Utils.INPUT.nextLine();
@@ -22,10 +29,18 @@ public class Control {
         }
     }
 
+    /**
+     * displays the menu
+     */
     public void menu() {
         choose(chooseCRUD(chooseTable()));
     }
 
+    /**
+     * which table do you want to use?
+     *
+     * @return - passes input onto chooseCRUD method
+     */
     public String chooseTable() {
 
         System.out.println("What would you like to access?\n1.Customers\n2.Items\n3.Orders\n4.Users");
@@ -33,6 +48,12 @@ public class Control {
         return f;
     }
 
+    /**
+     * which CRUD do you want to use?
+     *
+     * @param f - chooseTable input
+     * @return - compeleted user's input
+     */
     public String chooseCRUD(String f) {
 
         System.out.println("What would you like to access?\n1.Create\n2.Read\n3.Update\n4.Delete");
@@ -40,6 +61,11 @@ public class Control {
         return f;
     }
 
+    /**
+     * picks the corresponding functionality depending on input
+     *
+     * @param f - determines which functionality will be used
+     */
     public void choose(String f) {
         if (f.equals("11")) {
             MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);
@@ -80,9 +106,17 @@ public class Control {
             oiConnection.closeConnection();
             orderConnection.closeConnection();
         } else if (f.equals("32")) {
-            MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
-            oiConnection.read();
-            oiConnection.closeConnection();
+            System.out.println("1.All orders\n2.Details of specific order");
+            String pick = Utils.INPUT.nextLine();
+            if (pick.equals("1")) {
+                MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);
+                orderConnection.read();
+                orderConnection.closeConnection();
+            } else if (pick.equals("2")) {
+                MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
+                oiConnection.read();
+                oiConnection.closeConnection();
+            }
         } else if (f.equals("33")) {
             MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);
             MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);
