@@ -5,11 +5,14 @@ import com.qa.databases.daos.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+import org.apache.log4j.Logger;
+
 /**
  * this is the menu of the system
  */
 
 public class Control {
+	public static final Logger LOGGER = Logger.getLogger(Control.class);
     private String name;
     private String pWord;
     private Connection connection;
@@ -18,9 +21,9 @@ public class Control {
      * use this constructor if this is your first connection to the database during the run
      */
     public Control() {
-        System.out.println("User:");
+        LOGGER.info("User:");
         this.name = Utils.INPUT.nextLine();
-        System.out.println("password:");
+        LOGGER.info("password:");
         this.pWord = Utils.INPUT.nextLine();
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
@@ -43,7 +46,7 @@ public class Control {
      */
     public String chooseTable() {
 
-        System.out.println("What would you like to access?\n1.Customers\n2.Items\n3.Orders\n4.Users");
+        LOGGER.info("What would you like to access?\n1.Customers\n2.Items\n3.Orders\n4.Users");
         String f = Utils.INPUT.nextLine();
         return f;
     }
@@ -52,11 +55,11 @@ public class Control {
      * which CRUD do you want to use?
      *
      * @param f - chooseTable input
-     * @return - compeleted user's input
+     * @return - completed user's input
      */
     public String chooseCRUD(String f) {
 
-        System.out.println("What would you like to access?\n1.Create\n2.Read\n3.Update\n4.Delete");
+        LOGGER.info("What would you like to access?\n1.Create\n2.Read\n3.Update\n4.Delete");
         f += Utils.INPUT.nextLine();
         return f;
     }
@@ -106,7 +109,7 @@ public class Control {
             oiConnection.closeConnection();
             orderConnection.closeConnection();
         } else if (f.equals("32")) {
-            System.out.println("1.All orders\n2.Details of specific order");
+            LOGGER.info("1.All orders\n2.Details of specific order");
             String pick = Utils.INPUT.nextLine();
             if (pick.equals("1")) {
                 MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);

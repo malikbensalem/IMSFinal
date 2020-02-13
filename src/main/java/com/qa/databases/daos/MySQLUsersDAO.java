@@ -4,9 +4,12 @@ import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
+import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
+
+import org.apache.log4j.Logger;
 
 /**
  * this class allows a connection between java and the Users' table
@@ -15,6 +18,8 @@ import java.sql.*;
 
 public class MySQLUsersDAO implements Create, Read, Update, Delete {
     private Connection connection;
+    public static final Logger LOGGER = Logger.getLogger(Control.class);
+    
 
     /**
      * use this constructor if this is your first connection to the database during the run
@@ -27,7 +32,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -41,7 +46,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -59,7 +64,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
                     "SELECT username FROM Users WHERE username = \"" + name + "\" AND pWord = \"" + pWord + "\";");
             return resultSet.next();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
         return false;
     }
@@ -77,7 +82,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
                 statement.executeUpdate(
                         "INSERT INTO Users(username,pWord) values(\"" + name + "\", \"" + pWord + "\");");
             } catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.debug(e.getStackTrace());
             }
         }
     }
@@ -95,7 +100,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
                 statement
                         .executeUpdate("UPDATE Users SET pWord = \"" + pWord + "\" WHERE username = \"" + name + "\";");
             } catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.debug(e.getStackTrace());
             }
         }
     }
@@ -107,7 +112,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         try {
             connection.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -121,7 +126,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
                 String name = Utils.INPUT.nextLine();
                 statement.executeUpdate("DELETE FROM Users WHERE username = \"" + name + "\";");
             } catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.debug(e.getStackTrace());
             }
         }
     }
@@ -142,7 +147,7 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
                     System.out.println(name + " | " + pWord);
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                LOGGER.debug(e.getStackTrace());
             }
         }
         return resultSet;

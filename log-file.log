@@ -1,0 +1,227 @@
+2020-02-13 16:40:09 INFO  Control:24 - User:
+2020-02-13 16:40:13 INFO  Control:26 - password:
+2020-02-13 16:40:17 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 16:41:32 INFO  Control:24 - User:
+2020-02-13 16:41:32 INFO  Control:24 - User:
+2020-02-13 16:41:35 INFO  Control:26 - password:
+2020-02-13 16:41:38 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 16:41:39 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 16:41:40 DEBUG MySQLCustomerDAO:56 - [Ljava.lang.StackTraceElement;@5e25a92e
+2020-02-13 16:55:58 INFO  Control:24 - User:
+2020-02-13 16:56:04 INFO  Control:26 - password:
+2020-02-13 16:56:07 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 16:56:08 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 16:56:08 DEBUG MySQLCustomerDAO:56 - [Ljava.lang.StackTraceElement;@5e25a92e
+2020-02-13 17:09:25 INFO  Control:24 - User:
+2020-02-13 17:09:31 INFO  Control:26 - password:
+2020-02-13 17:09:35 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:09:36 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:09:37 ERROR MySQLCustomerDAO:59 - com.qa.databases.daos.MySQLCustomerDAO.<init>(MySQLCustomerDAO.java:55)
+2020-02-13 17:09:37 ERROR MySQLCustomerDAO:59 - com.qa.databases.persistances.Control.choose(Control.java:74)
+2020-02-13 17:09:37 ERROR MySQLCustomerDAO:59 - com.qa.databases.persistances.Control.menu(Control.java:39)
+2020-02-13 17:09:37 ERROR MySQLCustomerDAO:59 - com.qa.databases.persistances.Runner.main(Runner.java:15)
+2020-02-13 17:12:19 INFO  Control:24 - User:
+2020-02-13 17:12:25 INFO  Control:26 - password:
+2020-02-13 17:12:28 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:12:29 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:12:31 INFO  MySQLCustomerDAO:87 - Fristname:
+2020-02-13 17:12:36 INFO  MySQLCustomerDAO:89 - Last Name:
+2020-02-13 17:12:37 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 17:12:39 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:16:39 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:16:40 INFO  MySQLCustomerDAO:151 - 1 | bob | jeff
+2020-02-13 17:16:40 INFO  MySQLCustomerDAO:151 - 2 | bob | jeff
+2020-02-13 17:16:40 INFO  MySQLCustomerDAO:151 - 3 | sdf | dsf
+2020-02-13 17:16:40 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 17:39:32 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:39:38 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:39:51 INFO  MySQLItemsDAO:68 - Item name:
+2020-02-13 17:39:59 INFO  MySQLItemsDAO:70 - Price:
+2020-02-13 17:40:01 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 17:40:03 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:40:04 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:40:06 INFO  Control:89 - customerID:
+2020-02-13 17:40:07 INFO  MySQLOrderedItemsDAO:82 - Item's ID: 
+(press 0 once you are done)
+2020-02-13 17:40:09 INFO  MySQLOrderedItemsDAO:90 - >
+2020-02-13 17:40:09 INFO  MySQLOrderedItemsDAO:90 - >
+2020-02-13 17:40:11 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 17:40:14 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 17:40:16 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 17:40:18 INFO  Control:112 - 1.All orders
+2.Details of specific order
+2020-02-13 17:40:20 INFO  MySQLOrderedItemsDAO:108 - OrderID:
+2020-02-13 17:40:23 INFO  MySQLOrderedItemsDAO:116 - 3 | 1 | 2
+2020-02-13 17:40:23 INFO  MySQLOrderedItemsDAO:116 - 4 | 2 | 2
+2020-02-13 17:40:23 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 17:40:24 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:19:50 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:19:54 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:19:57 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:19:58 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:20:05 INFO  MySQLCustomerDAO:127 - Customer ID:
+2020-02-13 18:20:08 DEBUG MySQLCustomerDAO:131 - [Ljava.lang.StackTraceElement;@51b7e5df
+2020-02-13 18:20:08 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:20:21 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:20:23 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:20:25 INFO  MySQLCustomerDAO:151 - 1 | bob | jeff
+2020-02-13 18:20:25 INFO  MySQLCustomerDAO:151 - 2 | bob | jeff
+2020-02-13 18:20:25 INFO  MySQLCustomerDAO:151 - 3 | sdf | dsf
+2020-02-13 18:20:25 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:20:32 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:20:34 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:20:41 INFO  MySQLCustomerDAO:127 - Customer ID:
+2020-02-13 18:20:43 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:20:47 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:20:50 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:20:52 INFO  MySQLCustomerDAO:151 - 1 | bob | jeff
+2020-02-13 18:20:52 INFO  MySQLCustomerDAO:151 - 3 | sdf | dsf
+2020-02-13 18:20:52 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:28:04 INFO  Control:24 - User:
+2020-02-13 18:28:07 INFO  Control:26 - password:
+2020-02-13 18:28:10 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:28:14 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:28:21 INFO  MySQLCustomerDAO:127 - Customer ID:
+2020-02-13 18:28:22 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 18:28:29 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:28:31 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:28:37 INFO  MySQLCustomerDAO:127 - Customer ID:
+2020-02-13 18:29:18 INFO  Control:24 - User:
+2020-02-13 18:29:24 INFO  Control:26 - password:
+2020-02-13 18:29:28 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 18:29:52 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 18:30:00 INFO  MySQLCustomerDAO:128 - Customer ID:
+2020-02-13 18:30:02 DEBUG MySQLCustomerDAO:134 - [Ljava.lang.StackTraceElement;@797badd3
+2020-02-13 18:30:02 INFO  Runner:16 - Do you want to continue(Y/N)?

@@ -1,33 +1,37 @@
-//worng i need help with this and orderitems table
-
 package com.qa.databases.daos;
 
 import com.qa.databases.interfaces.CreateReturn;
 import com.qa.databases.interfaces.Read;
+import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
 
 import java.sql.*;
+import java.util.InputMismatchException;
+
+import org.apache.log4j.Logger;
+/**
+ * this class allows a connection between java and the Orders' table
+ */
 
 public class MySQLOrdersDAO implements CreateReturn, Read {
 
     private Connection connection;
-    /**
-     * this class allows a connection between java and the Orders' table
-     */
+    public static final Logger LOGGER = Logger.getLogger(Control.class);
+    
 
     /**
      * use this constructor if this is your first connection to the database during the run
      */
 
     public MySQLOrdersDAO() {
-        System.out.println("User:");
+        LOGGER.info("User:");
         String name = Utils.INPUT.nextLine();
-        System.out.println("password:");
+        LOGGER.info("password:");
         String pWord = Utils.INPUT.nextLine();
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -42,7 +46,7 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -55,7 +59,7 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
             connection.close();
         } catch (SQLException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -70,7 +74,7 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
                     "UPDATE Orders SET total= (SELECT sum(price) FROM OrderedItems, Items WHERE OrderedItems.ordersID = " + ordersID + ") WHERE ID = " + ordersID);
             statement.executeUpdate("UPDATE Orders SET total = IF ( total>10000, total*9/10, total) WHERE ID = " + ordersID);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
@@ -82,7 +86,7 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
     public int create() {
         int ID = 0;
         try (Statement statement = connection.createStatement()) {
-            System.out.println("customerID:");
+            LOGGER.info("customerID:");
             int customersID = Utils.INPUT2.nextInt();
             statement.executeUpdate("INSERT INTO Orders(customersID) VALUES(" + customersID + ");");
             ResultSet resultSet = statement.executeQuery("SELECT * FROM Orders");
@@ -90,7 +94,9 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
                 ID = resultSet.getInt("ID");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
+        }catch (InputMismatchException i) {
+        	LOGGER.debug(i.getStackTrace());
         }
         return ID;
     }
@@ -108,10 +114,10 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
                 int ID = resultSet.getInt("ID");
                 String custID = resultSet.getString("customersID");
                 String total = resultSet.getString("total");
-                System.out.println(ID + " | " + custID + " | " + total);
+                LOGGER.info(ID + " | " + custID + " | " + total);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
         return resultSet;
     }
