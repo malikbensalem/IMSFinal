@@ -33,10 +33,7 @@ return b();
 }
 Above method will tested
 public boolean b(){
-Scanner scan =new Scanner(system.in);
-If (scan.nextline().equals(“y”){
-return true;
-}return false;
+return false;
 }
 Above method will be stubbed
 @spy
