@@ -68,10 +68,8 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
                 LOGGER.info("Price:");
                 float price = Utils.INPUT3.nextFloat();
                 statement.executeUpdate("INSERT INTO Items (iName,price) VALUES( \"" + name + "\", " + price + ");");
-            } catch (SQLException e) {
+            } catch (SQLException | InputMismatchException e) {
                 LOGGER.debug(e.getStackTrace());
-            } catch (InputMismatchException i) {
-                LOGGER.debug(i.getStackTrace());
             }
         }
         UD.closeConnection();
@@ -93,10 +91,8 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
                 float price = Utils.INPUT3.nextFloat();
                 statement.executeUpdate("UPDATE Items(name,price) SET iName = \"" + name + "\", price = " + price
                         + " WHERE ID= " + ID + ";");
-            } catch (SQLException e) {
+            } catch (SQLException | InputMismatchException e) {
                 LOGGER.debug(e.getStackTrace());
-            } catch (InputMismatchException i) {
-                LOGGER.debug(i.getStackTrace());
             }
         }
         UD.closeConnection();

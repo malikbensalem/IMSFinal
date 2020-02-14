@@ -75,7 +75,7 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
      * @return - this will return the OrdersID so that total amount can be calculated for this specific order
      */
     public int create(int ordersID) {
-        int itemsID = -1;
+        int itemsID;
         try (Statement statement = connection.createStatement()) {
             LOGGER.info("Item's ID: \n(press 0 once you are done)");
             while (true) {
@@ -87,10 +87,8 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
                         "INSERT INTO OrderedItems (ordersID,itemsID) VALUES(" + ordersID + ", " + itemsID + ");");
                 LOGGER.info(">");
             }
-        } catch (SQLException e) {
+        } catch (SQLException | InputMismatchException e) {
             LOGGER.debug(e.getStackTrace());
-        } catch (InputMismatchException i) {
-        	LOGGER.debug(i.getStackTrace());
         }
         return ordersID;
     }
@@ -100,6 +98,7 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
      *
      * @return - specific customer's order
      */
+    @SuppressWarnings("UnusedReturnValue")
     public ResultSet read() {
         ResultSet resultSet = null;
         try (Statement statement = connection.createStatement()) {
@@ -136,10 +135,8 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
             int newItem = Utils.INPUT2.nextInt();
             statement.executeUpdate("UPDATE OrderedItems SET ItemsID = " + newItem + " WHERE ItemsID = " + oldItem
                     + "AND ordersID = " + ordersID + ";");
-        } catch (SQLException e) {
+        } catch (SQLException | InputMismatchException e) {
             LOGGER.debug(e.getStackTrace());
-        }catch (InputMismatchException i) {
-        	LOGGER.debug(i.getStackTrace());
         }
         return ordersID;
     }
@@ -155,10 +152,8 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
             MySQLOrdersDAO o = new MySQLOrdersDAO(name, pWord);
             o.addTotal(orderID);
 
-        } catch (SQLException e) {
+        } catch (SQLException | InputMismatchException e) {
             LOGGER.debug(e.getStackTrace());
-        }catch (InputMismatchException i) {
-        	LOGGER.debug(i.getStackTrace());
         }
     }
 }

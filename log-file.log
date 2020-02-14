@@ -240,3 +240,196 @@
 2020-02-13 20:52:02 INFO  MySQLCustomerDAO:156 - 1 | bob | jeff
 2020-02-13 20:52:02 INFO  MySQLCustomerDAO:156 - 3 | sdf | dsf
 2020-02-13 20:52:02 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:58:31 INFO  Control:22 - User:
+2020-02-14 00:58:36 INFO  Control:24 - password:
+2020-02-14 00:58:39 DEBUG Control:29 - [Ljava.lang.StackTraceElement;@d35dea7
+2020-02-14 00:58:39 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:58:54 INFO  Control:22 - User:
+2020-02-14 00:58:58 INFO  Control:24 - password:
+2020-02-14 00:59:03 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:05 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:07 INFO  MySQLCustomerDAO:154 - 1 | bob | jeff
+2020-02-14 00:59:07 INFO  MySQLCustomerDAO:154 - 3 | sdf | dsf
+2020-02-14 00:59:07 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:09 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:11 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:12 INFO  MySQLItemsDAO:136 - 1 | keyboard | 20.23
+2020-02-14 00:59:12 INFO  MySQLItemsDAO:136 - 2 | pc | 45.00
+2020-02-14 00:59:12 INFO  MySQLItemsDAO:136 - 3 | sdfgdf | 5645.00
+2020-02-14 00:59:12 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:14 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:16 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:18 INFO  Control:109 - 1.All orders
+2.Details of specific order
+2020-02-14 00:59:19 INFO  MySQLOrdersDAO:118 - 1 | 1 | 20.23
+2020-02-14 00:59:19 INFO  MySQLOrdersDAO:118 - 2 | 1 | 10278.41
+2020-02-14 00:59:19 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:21 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:23 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:25 INFO  MySQLItemsDAO:136 - 1 | keyboard | 20.23
+2020-02-14 00:59:25 INFO  MySQLItemsDAO:136 - 2 | pc | 45.00
+2020-02-14 00:59:25 INFO  MySQLItemsDAO:136 - 3 | sdfgdf | 5645.00
+2020-02-14 00:59:25 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:29 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:30 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:32 INFO  Control:109 - 1.All orders
+2.Details of specific order
+2020-02-14 00:59:33 INFO  MySQLOrderedItemsDAO:107 - OrderID:
+2020-02-14 00:59:34 INFO  MySQLOrderedItemsDAO:115 - 1 | 1 | 1
+2020-02-14 00:59:34 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:36 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:37 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:44 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:47 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 00:59:49 INFO  Control:59 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 00:59:50 INFO  MySQLCustomerDAO:86 - First name:
+2020-02-14 00:59:53 INFO  MySQLCustomerDAO:88 - Last Name:
+2020-02-14 00:59:54 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-14 00:59:56 INFO  Control:47 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:08:51 INFO  Control:23 - User:
+2020-02-14 01:08:56 INFO  Control:25 - password:
+2020-02-14 01:09:01 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:03 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:05 INFO  MySQLCustomerDAO:151 - 1 | bob | jeff
+2020-02-14 01:09:05 INFO  MySQLCustomerDAO:151 - 3 | sdf | dsf
+2020-02-14 01:09:05 INFO  MySQLCustomerDAO:151 - 4 | df | dfg
+2020-02-14 01:09:05 INFO  Runner:14 - Do you want to continue(Y/N)?
+2020-02-14 01:09:07 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:09 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:10 INFO  MySQLItemsDAO:132 - 1 | keyboard | 20.23
+2020-02-14 01:09:10 INFO  MySQLItemsDAO:132 - 2 | pc | 45.00
+2020-02-14 01:09:10 INFO  MySQLItemsDAO:132 - 3 | sdfgdf | 5645.00
+2020-02-14 01:09:10 INFO  Runner:14 - Do you want to continue(Y/N)?
+2020-02-14 01:09:11 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:12 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:14 INFO  Control:129 - 1.All orders
+2.Details of specific order
+2020-02-14 01:09:17 INFO  MySQLOrdersDAO:116 - 1 | 1 | 20.23
+2020-02-14 01:09:17 INFO  MySQLOrdersDAO:116 - 2 | 1 | 10278.41
+2020-02-14 01:09:17 INFO  Runner:14 - Do you want to continue(Y/N)?
+2020-02-14 01:09:18 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:20 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:22 INFO  Control:129 - 1.All orders
+2.Details of specific order
+2020-02-14 01:09:23 INFO  MySQLOrderedItemsDAO:105 - OrderID:
+2020-02-14 01:09:24 INFO  MySQLOrderedItemsDAO:113 - 3 | 1 | 2
+2020-02-14 01:09:24 INFO  MySQLOrderedItemsDAO:113 - 4 | 2 | 2
+2020-02-14 01:09:24 INFO  Runner:14 - Do you want to continue(Y/N)?
+2020-02-14 01:09:26 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:27 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:36 INFO  Runner:14 - Do you want to continue(Y/N)?
+2020-02-14 01:09:37 INFO  Control:48 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-14 01:09:39 INFO  Control:60 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-14 01:09:44 INFO  Runner:14 - Do you want to continue(Y/N)?

@@ -2,21 +2,21 @@ package com.qa.databases.daos;
 
 import com.qa.databases.interfaces.CreateReturn;
 import com.qa.databases.interfaces.Read;
-import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.InputMismatchException;
+
 /**
  * this class allows a connection between java and the Orders' table
  */
 
 public class MySQLOrdersDAO implements CreateReturn, Read {
 
+    public static final Logger LOGGER = Logger.getLogger(MySQLOrdersDAO.class);
     private Connection connection;
-    public static final Logger LOGGER = Logger.getLogger(Control.class);
-    
+
 
     /**
      * use this constructor if this is your first connection to the database during the run
@@ -92,16 +92,16 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
             while (resultSet.next()) {
                 ID = resultSet.getInt("ID");
             }
-        } catch (SQLException e) {
+            resultSet.close();
+        } catch (SQLException | InputMismatchException e) {
             LOGGER.debug(e.getStackTrace());
-        }catch (InputMismatchException i) {
-        	LOGGER.debug(i.getStackTrace());
         }
         return ID;
     }
 
     /**
      * allows people to see all the orders that have been made
+     *
      * @return - Orders' table
      */
     public ResultSet read() {

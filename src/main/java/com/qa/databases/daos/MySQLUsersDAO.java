@@ -4,7 +4,6 @@ import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
-import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
 import org.apache.log4j.Logger;
 
@@ -16,7 +15,7 @@ import java.sql.*;
  */
 
 public class MySQLUsersDAO implements Create, Read, Update, Delete {
-    public static final Logger LOGGER = Logger.getLogger(Control.class);
+    public static final Logger LOGGER = Logger.getLogger(MySQLUsersDAO.class);
     private Connection connection;
 
 
@@ -57,11 +56,13 @@ public class MySQLUsersDAO implements Create, Read, Update, Delete {
         String name = Utils.INPUT.nextLine();
         System.out.println("Admin password:");
         String pWord = Utils.INPUT.nextLine();
-        ResultSet resultSet = null;
+        ResultSet resultSet;
         try (Statement statement = connection.createStatement()) {
             resultSet = statement.executeQuery(
                     "SELECT username FROM Users WHERE username = \"" + name + "\" AND pWord = \"" + pWord + "\";");
-            return resultSet.next();
+            boolean f = resultSet.next();
+            resultSet.close();
+            return f;
         } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
         }
