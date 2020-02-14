@@ -6,10 +6,9 @@ import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
 import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
-
-import org.apache.log4j.Logger;
 
 /**
  * this class allows a connection between java and the Users' table
@@ -17,9 +16,9 @@ import org.apache.log4j.Logger;
  */
 
 public class MySQLUsersDAO implements Create, Read, Update, Delete {
-    private Connection connection;
     public static final Logger LOGGER = Logger.getLogger(Control.class);
-    
+    private Connection connection;
+
 
     /**
      * use this constructor if this is your first connection to the database during the run

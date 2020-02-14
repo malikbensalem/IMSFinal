@@ -16,6 +16,5 @@ public class Runner {
             LOGGER.info("Do you want to continue(Y/N)?");
             cont = Utils.INPUT.nextLine().toLowerCase();
         }
-
     }
 }

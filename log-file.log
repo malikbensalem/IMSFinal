@@ -225,3 +225,18 @@
 2020-02-13 18:30:00 INFO  MySQLCustomerDAO:128 - Customer ID:
 2020-02-13 18:30:02 DEBUG MySQLCustomerDAO:134 - [Ljava.lang.StackTraceElement;@797badd3
 2020-02-13 18:30:02 INFO  Runner:16 - Do you want to continue(Y/N)?
+2020-02-13 20:51:46 INFO  Control:24 - User:
+2020-02-13 20:51:51 INFO  Control:26 - password:
+2020-02-13 20:51:57 INFO  Control:49 - What would you like to access?
+1.Customers
+2.Items
+3.Orders
+4.Users
+2020-02-13 20:52:00 INFO  Control:62 - What would you like to access?
+1.Create
+2.Read
+3.Update
+4.Delete
+2020-02-13 20:52:02 INFO  MySQLCustomerDAO:156 - 1 | bob | jeff
+2020-02-13 20:52:02 INFO  MySQLCustomerDAO:156 - 3 | sdf | dsf
+2020-02-13 20:52:02 INFO  Runner:16 - Do you want to continue(Y/N)?

@@ -1,12 +1,14 @@
 package com.qa.databases.persistances;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+import org.mockito.Spy;
 
 public class ControllerTest {
-	@Test
-	public void chooseTableTest() {
-		//assertEquals("1", );
-	}
+    @Spy
+    Control con;
+
+    @Test
+    public void chooseTest() {
+
+    }
 }

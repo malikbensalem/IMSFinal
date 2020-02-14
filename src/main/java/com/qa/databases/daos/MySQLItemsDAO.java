@@ -4,25 +4,23 @@ import com.qa.databases.interfaces.Create;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.interfaces.Update;
-import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import org.apache.log4j.Logger;
 
 /**
  * this class allows a connection between java and the Items' table
  */
 
 public class MySQLItemsDAO implements Create, Read, Update, Delete {
+    public static final Logger LOGGER = Logger.getLogger(MySQLItemsDAO.class);
     private Connection connection;
     private String name;
     private String pWord;
-    public static final Logger LOGGER = Logger.getLogger(MySQLItemsDAO.class);
-    
+
 
     /**
      * use this constructor if this is your first connection to the database during the run
@@ -73,7 +71,7 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
             } catch (SQLException e) {
                 LOGGER.debug(e.getStackTrace());
             } catch (InputMismatchException i) {
-            	LOGGER.debug(i.getStackTrace());
+                LOGGER.debug(i.getStackTrace());
             }
         }
         UD.closeConnection();
@@ -97,8 +95,8 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
                         + " WHERE ID= " + ID + ";");
             } catch (SQLException e) {
                 LOGGER.debug(e.getStackTrace());
-            }catch (InputMismatchException i) {
-            	LOGGER.debug(i.getStackTrace());
+            } catch (InputMismatchException i) {
+                LOGGER.debug(i.getStackTrace());
             }
         }
         UD.closeConnection();

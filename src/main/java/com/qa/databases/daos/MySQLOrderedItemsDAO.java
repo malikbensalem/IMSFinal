@@ -3,13 +3,11 @@ package com.qa.databases.daos;
 import com.qa.databases.interfaces.CreateParam;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.UpdateReturn;
-import com.qa.databases.persistances.Control;
 import com.qa.databases.persistances.Utils;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.InputMismatchException;
-
-import org.apache.log4j.Logger;
 
 /**
  * this class allows a connection between java and the OrderedItems' table

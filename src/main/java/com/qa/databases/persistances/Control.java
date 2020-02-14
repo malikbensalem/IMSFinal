@@ -1,18 +1,16 @@
 package com.qa.databases.persistances;
 
 import com.qa.databases.daos.*;
-
+import org.apache.log4j.Logger;
 import java.sql.Connection;
 import java.sql.DriverManager;
-
-import org.apache.log4j.Logger;
 
 /**
  * this is the menu of the system
  */
 
 public class Control {
-	public static final Logger LOGGER = Logger.getLogger(Control.class);
+    public static final Logger LOGGER = Logger.getLogger(Control.class);
     private String name;
     private String pWord;
     private Connection connection;
@@ -28,7 +26,7 @@ public class Control {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://35.242.130.225/IMS", name, pWord);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.debug(e.getStackTrace());
         }
     }
 
