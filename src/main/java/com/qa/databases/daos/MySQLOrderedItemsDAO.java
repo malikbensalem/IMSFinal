@@ -4,10 +4,11 @@ import com.qa.databases.interfaces.CreateParam;
 import com.qa.databases.interfaces.Delete;
 import com.qa.databases.interfaces.UpdateReturn;
 import com.qa.databases.persistances.Utils;
-import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.InputMismatchException;
+
+import org.apache.log4j.Logger;
 
 /**
  * this class allows a connection between java and the OrderedItems' table
@@ -75,9 +76,9 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
      * @return - this will return the OrdersID so that total amount can be calculated for this specific order
      */
     public int create(int ordersID) {
-        int itemsID;
+        int itemsID = -1;
         try (Statement statement = connection.createStatement()) {
-            LOGGER.info("Item's ID: \n(press 0 once you are done)");
+            LOGGER.info("Item's id: \n(press 0 once you are done)");
             while (true) {
                 itemsID = Utils.INPUT2.nextInt();
                 if (itemsID <= 0) {
@@ -87,8 +88,10 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
                         "INSERT INTO OrderedItems (ordersID,itemsID) VALUES(" + ordersID + ", " + itemsID + ");");
                 LOGGER.info(">");
             }
-        } catch (SQLException | InputMismatchException e) {
+        } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
+        } catch (InputMismatchException i) {
+        	LOGGER.debug(i.getStackTrace());
         }
         return ordersID;
     }
@@ -98,7 +101,6 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
      *
      * @return - specific customer's order
      */
-    @SuppressWarnings("UnusedReturnValue")
     public ResultSet read() {
         ResultSet resultSet = null;
         try (Statement statement = connection.createStatement()) {
@@ -107,10 +109,10 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
             resultSet = statement
                     .executeQuery("SELECT * FROM OrderedItems WHERE ordersID = " + oID + ";");
             while (resultSet.next()) {
-                int ID = resultSet.getInt("ID");
+                int id = resultSet.getInt("id");
                 int itemsID = resultSet.getInt("itemsID");
                 int ordersID = resultSet.getInt("ordersID");
-                LOGGER.info(ID + " | " + itemsID + " | " + ordersID);
+                LOGGER.info(id + " | " + itemsID + " | " + ordersID);
             }
         } catch (Exception e) {
             LOGGER.debug(e.getStackTrace());
@@ -127,16 +129,18 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
     public int update() {
         int ordersID = -1;
         try (Statement statement = connection.createStatement()) {
-            LOGGER.info("order's ID to be changed:");
+            LOGGER.info("order's id to be changed:");
             ordersID = Utils.INPUT2.nextInt();
-            LOGGER.info("Item's ID to be changed:");
+            LOGGER.info("Item's id to be changed:");
             int oldItem = Utils.INPUT2.nextInt();
-            LOGGER.info("new Item's ID:");
+            LOGGER.info("new Item's id:");
             int newItem = Utils.INPUT2.nextInt();
             statement.executeUpdate("UPDATE OrderedItems SET ItemsID = " + newItem + " WHERE ItemsID = " + oldItem
                     + "AND ordersID = " + ordersID + ";");
-        } catch (SQLException | InputMismatchException e) {
+        } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
+        }catch (InputMismatchException i) {
+        	LOGGER.debug(i.getStackTrace());
         }
         return ordersID;
     }
@@ -152,8 +156,10 @@ public class MySQLOrderedItemsDAO implements CreateParam, UpdateReturn, Delete {
             MySQLOrdersDAO o = new MySQLOrdersDAO(name, pWord);
             o.addTotal(orderID);
 
-        } catch (SQLException | InputMismatchException e) {
+        } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
+        }catch (InputMismatchException i) {
+        	LOGGER.debug(i.getStackTrace());
         }
     }
 }

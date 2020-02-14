@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_BrH0AE8TEeqmpt2mecgBkw">
+  <modelElement href="malik-ims.uml#_CIMxkk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnLMkE8TEeqmpt2mecgBkw" targetItem="_CnZ2GU8TEeqmpt2mecgBkw" sourceItem="_CnEe4E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnPeAE8TEeqmpt2mecgBkw" targetItem="_CnZ2L08TEeqmpt2mecgBkw" sourceItem="_CnO28E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnQsIE8TEeqmpt2mecgBkw" targetItem="_CnZ2NU8TEeqmpt2mecgBkw" sourceItem="_CnQFEE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnQsIk8TEeqmpt2mecgBkw" targetItem="_CnZ2QU8TEeqmpt2mecgBkw" sourceItem="_CnQsIU8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnQsJE8TEeqmpt2mecgBkw" targetItem="_CnZ2RE8TEeqmpt2mecgBkw" sourceItem="_CnQsI08TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnRTMU8TEeqmpt2mecgBkw" targetItem="_CnZ2R08TEeqmpt2mecgBkw" sourceItem="_CnRTME8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnR6QE8TEeqmpt2mecgBkw" targetItem="_CnZ2Sk8TEeqmpt2mecgBkw" sourceItem="_CnRTMk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CnR6Qk8TEeqmpt2mecgBkw" targetItem="_CnZ2T08TEeqmpt2mecgBkw" sourceItem="_CnR6QU8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CnYn8E8TEeqmpt2mecgBkw" source="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN2toU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CnZPAE8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN3UsE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CnZPAU8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CnZPAk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN2tok8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZPA08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZPBE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CnZPBU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNTUAE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZPBk8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CnZPB08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CnZ2EE8TEeqmpt2mecgBkw" source="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN3UsU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CnZ2EU8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN37wE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CnZ2Ek8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CnZ2E08TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN3Usk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2FE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2FU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CnZ2Fk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNUiIU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2F08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2GE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Co5q4U8TEeqmpt2mecgBkw" targetItem="_Co_KcE8TEeqmpt2mecgBkw" sourceItem="_Co5q4E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Co6R8E8TEeqmpt2mecgBkw" source="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN1fgE8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_Co8uM08TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN2GkE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Co8uME8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_Co8uMU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN1fgU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co98UE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co9VQk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Co8uMk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNQ3wE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co98Uk8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Co98UU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Co6R8U8TEeqmpt2mecgBkw" source="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN2GkU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_Co9VQU8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN2toE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Co8uNE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_Co8uNU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN2Gkk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co98VU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co98VE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Co9VQE8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNSs8E8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co98V08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co98Vk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Co65AU8TEeqmpt2mecgBkw" targetItem="_Co_Khk8TEeqmpt2mecgBkw" sourceItem="_Co65AE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Co65A08TEeqmpt2mecgBkw" targetItem="_Co_KjE8TEeqmpt2mecgBkw" sourceItem="_Co65Ak8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Co7gEU8TEeqmpt2mecgBkw" targetItem="_Co_KmE8TEeqmpt2mecgBkw" sourceItem="_Co7gEE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpMl0U8TEeqmpt2mecgBkw" targetItem="_CpQ3QE8TEeqmpt2mecgBkw" sourceItem="_CpMl0E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpMl0k8TEeqmpt2mecgBkw" source="_CpQ3QE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN5w8E8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CpPCE08TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN6YAE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CpPCEE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CpPCEU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN5w8U8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpPpIU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpPpIE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CpPCEk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNW-YE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpPpI08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CpPpIk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpMl008TEeqmpt2mecgBkw" source="_CpQ3QE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN6YAU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CpPCF08TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN6_EE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CpPCFE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CpPCFU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN6YAk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQQME8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpPpJU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CpPCFk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNW-Yk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQQMk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQQMU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpNM4U8TEeqmpt2mecgBkw" targetItem="_CpQ3TE8TEeqmpt2mecgBkw" sourceItem="_CpNM4E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpNM408TEeqmpt2mecgBkw" targetItem="_CpQ3Uk8TEeqmpt2mecgBkw" sourceItem="_CpNM4k8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpNz8U8TEeqmpt2mecgBkw" targetItem="_CpQ3Xk8TEeqmpt2mecgBkw" sourceItem="_CpNz8E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpNz808TEeqmpt2mecgBkw" targetItem="_CpQ3YU8TEeqmpt2mecgBkw" sourceItem="_CpNz8k8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpObAU8TEeqmpt2mecgBkw" targetItem="_CpQ3Z08TEeqmpt2mecgBkw" sourceItem="_CpObAE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpObA08TEeqmpt2mecgBkw" targetItem="_CpQ3bE8TEeqmpt2mecgBkw" sourceItem="_CpObAk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpWW0U8TEeqmpt2mecgBkw" targetItem="_Cpb2YE8TEeqmpt2mecgBkw" sourceItem="_CpWW0E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpWW0k8TEeqmpt2mecgBkw" source="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN37wU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CpaBMk8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN4i0E8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CpZaIE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CpaBME8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN37wk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpbPUU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpbPUE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CpaBMU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNVwQU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpbPU08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CpbPUk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpW94E8TEeqmpt2mecgBkw" source="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN5J4E8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CpaoQE8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN5J4k8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CpaBM08TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CpaBNE8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN5J4U8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpbPVk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpbPVU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CpaBNU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNWXUU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpbPWE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpbPV08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpW94k8TEeqmpt2mecgBkw" targetItem="_Cpb2dk8TEeqmpt2mecgBkw" sourceItem="_CpW94U8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpXk8U8TEeqmpt2mecgBkw" targetItem="_Cpb2fE8TEeqmpt2mecgBkw" sourceItem="_CpXk8E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpXk808TEeqmpt2mecgBkw" targetItem="_Cpb2iE8TEeqmpt2mecgBkw" sourceItem="_CpXk8k8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpYMAU8TEeqmpt2mecgBkw" targetItem="_Cpb2i08TEeqmpt2mecgBkw" sourceItem="_CpYMAE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpYMA08TEeqmpt2mecgBkw" targetItem="_Cpb2k08TEeqmpt2mecgBkw" sourceItem="_CpYMAk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpYzEU8TEeqmpt2mecgBkw" targetItem="_Cpb2mE8TEeqmpt2mecgBkw" sourceItem="_CpYzEE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpYzE08TEeqmpt2mecgBkw" targetItem="_Cpb2nU8TEeqmpt2mecgBkw" sourceItem="_CpYzEk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Cph9AU8TEeqmpt2mecgBkw" targetItem="_Cpm1gE8TEeqmpt2mecgBkw" sourceItem="_Cph9AE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpikEE8TEeqmpt2mecgBkw" source="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN-pcE8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CplAU08TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN-pck8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CplAUE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CplAUU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN-pcU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CplnZE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CplnY08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CplAUk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNaBsU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CplnZk8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CplnZU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CpikEU8TEeqmpt2mecgBkw" source="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN_QgE8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CplnYk8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN_Qgk8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CplAVE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CplnYE8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN_QgU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpmOck8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpmOcU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CplnYU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNaowU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpmOdE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpmOc08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpjLIU8TEeqmpt2mecgBkw" targetItem="_Cpm1jE8TEeqmpt2mecgBkw" sourceItem="_CpjLIE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpjLI08TEeqmpt2mecgBkw" targetItem="_Cpm1kk8TEeqmpt2mecgBkw" sourceItem="_CpjLIk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpjyMU8TEeqmpt2mecgBkw" targetItem="_Cpm1nk8TEeqmpt2mecgBkw" sourceItem="_CpjyME8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpjyM08TEeqmpt2mecgBkw" targetItem="_Cpm1o08TEeqmpt2mecgBkw" sourceItem="_CpjyMk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpjyNU8TEeqmpt2mecgBkw" targetItem="_Cpm1pk8TEeqmpt2mecgBkw" sourceItem="_CpjyNE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpkZQE8TEeqmpt2mecgBkw" targetItem="_Cpm1qU8TEeqmpt2mecgBkw" sourceItem="_CpjyNk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpkZQk8TEeqmpt2mecgBkw" targetItem="_Cpm1rE8TEeqmpt2mecgBkw" sourceItem="_CpkZQU8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpkZRE8TEeqmpt2mecgBkw" targetItem="_Cpm1r08TEeqmpt2mecgBkw" sourceItem="_CpkZQ08TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CpsVEU8TEeqmpt2mecgBkw" targetItem="_CpuKQE8TEeqmpt2mecgBkw" sourceItem="_CpsVEE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Cps8IE8TEeqmpt2mecgBkw" sourceAnchor="522.0,23.0" targetAnchor="97.0,71.0" dashed="true" superClass="_CpuKQE8TEeqmpt2mecgBkw" subClass="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM1Z8E8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4CTFk8TEeqmpt2mecgBkw" sourceX="442" targetY="78"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Cp_QAE8TEeqmpt2mecgBkw" targetItem="_CqBsQE8TEeqmpt2mecgBkw" sourceItem="_Cp-o8E8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Cp_QAU8TEeqmpt2mecgBkw" sourceAnchor="241.0,0.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqBsQE8TEeqmpt2mecgBkw" subClass="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMwhcE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4BE8k8TEeqmpt2mecgBkw" sourceY="-27" targetX="377" targetY="28"/>
+    <bendpoints xmi:id="_C4BE808TEeqmpt2mecgBkw" sourceX="-377" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Cp_QAk8TEeqmpt2mecgBkw" sourceAnchor="218.0,0.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqBsQE8TEeqmpt2mecgBkw" subClass="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM0L0E8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C3_20E8TEeqmpt2mecgBkw" sourceY="-148" targetX="-141" targetY="28"/>
+    <bendpoints xmi:id="_C3_20U8TEeqmpt2mecgBkw" sourceX="141" sourceY="-148" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Cp_QA08TEeqmpt2mecgBkw" sourceAnchor="261.0,0.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqBsQE8TEeqmpt2mecgBkw" subClass="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM2BAU8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4C6IE8TEeqmpt2mecgBkw" sourceY="-27" targetX="937" targetY="28"/>
+    <bendpoints xmi:id="_C4C6IU8TEeqmpt2mecgBkw" sourceX="-937" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Cp_QBE8TEeqmpt2mecgBkw" sourceAnchor="217.0,0.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqBsQE8TEeqmpt2mecgBkw" subClass="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNBnMk8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4C6JE8TEeqmpt2mecgBkw" sourceY="-46" targetX="-1170" targetY="28"/>
+    <bendpoints xmi:id="_C4C6JU8TEeqmpt2mecgBkw" sourceX="1170" sourceY="-46" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqC6YU8TEeqmpt2mecgBkw" targetItem="_CqFWoE8TEeqmpt2mecgBkw" sourceItem="_CqC6YE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqC6Yk8TEeqmpt2mecgBkw" sourceAnchor="354.0,251.0" targetAnchor="76.0,71.0" dashed="true" superClass="_CqFWoE8TEeqmpt2mecgBkw" subClass="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMv6YE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4BE9E8TEeqmpt2mecgBkw" sourceY="356" targetX="1810" targetY="662"/>
+    <bendpoints xmi:id="_C4BE9U8TEeqmpt2mecgBkw" sourceX="-2500" sourceY="356" targetX="-690" targetY="662"/>
+    <bendpoints xmi:id="_C4BsAE8TEeqmpt2mecgBkw" sourceX="-2500" sourceY="-278" targetX="-690" targetY="28"/>
+    <bendpoints xmi:id="_C4BsAU8TEeqmpt2mecgBkw" sourceX="-1810" sourceY="-278" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqDhcE8TEeqmpt2mecgBkw" sourceAnchor="0.0,145.0" targetAnchor="76.0,71.0" dashed="true" superClass="_CqFWoE8TEeqmpt2mecgBkw" subClass="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMzkwU8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C3_20k8TEeqmpt2mecgBkw" sourceX="-1052" targetX="-91" targetY="321"/>
+    <bendpoints xmi:id="_C4Ad4E8TEeqmpt2mecgBkw" sourceX="-1052" sourceY="-293" targetX="-91" targetY="28"/>
+    <bendpoints xmi:id="_C4Ad4U8TEeqmpt2mecgBkw" sourceX="-961" sourceY="-293" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqDhcU8TEeqmpt2mecgBkw" sourceAnchor="224.0,194.0" targetAnchor="76.0,71.0" dashed="true" superClass="_CqFWoE8TEeqmpt2mecgBkw" subClass="_CpQ3QE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM32MU8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4CTEE8TEeqmpt2mecgBkw" sourceY="45" targetX="646" targetY="351"/>
+    <bendpoints xmi:id="_C4CTEU8TEeqmpt2mecgBkw" sourceX="-985" sourceY="45" targetX="-339" targetY="351"/>
+    <bendpoints xmi:id="_C4CTEk8TEeqmpt2mecgBkw" sourceX="-985" sourceY="-278" targetX="-339" targetY="28"/>
+    <bendpoints xmi:id="_C4CTE08TEeqmpt2mecgBkw" sourceX="-646" sourceY="-278" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqDhck8TEeqmpt2mecgBkw" sourceAnchor="67.0,0.0" targetAnchor="76.0,71.0" dashed="true" superClass="_CqFWoE8TEeqmpt2mecgBkw" subClass="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNBnME8TEeqmpt2mecgBkw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqGkwU8TEeqmpt2mecgBkw" targetItem="_CqHy4E8TEeqmpt2mecgBkw" sourceItem="_CqGkwE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqHL0E8TEeqmpt2mecgBkw" sourceAnchor="261.0,251.0" targetAnchor="67.0,71.0" dashed="true" superClass="_CqHy4E8TEeqmpt2mecgBkw" subClass="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM2BAE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4C6Ik8TEeqmpt2mecgBkw" sourceY="136" targetX="-935" targetY="442"/>
+    <bendpoints xmi:id="_C4C6I08TEeqmpt2mecgBkw" sourceX="935" sourceY="136" targetY="442"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqJBAU8TEeqmpt2mecgBkw" targetItem="_CqK2ME8TEeqmpt2mecgBkw" sourceItem="_CqJBAE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqJBAk8TEeqmpt2mecgBkw" sourceAnchor="444.0,251.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqK2ME8TEeqmpt2mecgBkw" subClass="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMusQE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4BsAk8TEeqmpt2mecgBkw" sourceY="45" targetX="-468" targetY="351"/>
+    <bendpoints xmi:id="_C4BsA08TEeqmpt2mecgBkw" sourceX="901" sourceY="45" targetX="433" targetY="351"/>
+    <bendpoints xmi:id="_C4BsBE8TEeqmpt2mecgBkw" sourceX="901" sourceY="-278" targetX="433" targetY="28"/>
+    <bendpoints xmi:id="_C4BsBU8TEeqmpt2mecgBkw" sourceX="468" sourceY="-278" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqJoEE8TEeqmpt2mecgBkw" sourceAnchor="436.0,145.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqK2ME8TEeqmpt2mecgBkw" subClass="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMzkwE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4Ad4k8TEeqmpt2mecgBkw" sourceX="1374" targetX="403" targetY="321"/>
+    <bendpoints xmi:id="_C4Ad408TEeqmpt2mecgBkw" sourceX="1374" sourceY="-293" targetX="403" targetY="28"/>
+    <bendpoints xmi:id="_C4Ad5E8TEeqmpt2mecgBkw" sourceX="971" sourceY="-293" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqJoEU8TEeqmpt2mecgBkw" sourceAnchor="187.0,0.0" targetAnchor="52.0,71.0" dashed="true" superClass="_CqK2ME8TEeqmpt2mecgBkw" subClass="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNBAIE8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4DhME8TEeqmpt2mecgBkw" sourceY="-160" targetX="-2248" targetY="-86"/>
+    <bendpoints xmi:id="_C4DhMU8TEeqmpt2mecgBkw" sourceX="2181" sourceY="-160" targetX="-67" targetY="-86"/>
+    <bendpoints xmi:id="_C4DhMk8TEeqmpt2mecgBkw" sourceX="2181" sourceY="-46" targetX="-67" targetY="28"/>
+    <bendpoints xmi:id="_C4DhM08TEeqmpt2mecgBkw" sourceX="2248" sourceY="-46" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqMrYE8TEeqmpt2mecgBkw" targetItem="_CqOgkE8TEeqmpt2mecgBkw" sourceItem="_CqMEUE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqMrYU8TEeqmpt2mecgBkw" sourceAnchor="414.0,251.0" targetAnchor="55.0,71.0" dashed="true" superClass="_CqOgkE8TEeqmpt2mecgBkw" subClass="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMv6YU8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4BsBk8TEeqmpt2mecgBkw" sourceY="386" targetX="2685" targetY="692"/>
+    <bendpoints xmi:id="_C4BsB08TEeqmpt2mecgBkw" sourceX="-2685" sourceY="386" targetY="692"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqMrYk8TEeqmpt2mecgBkw" sourceAnchor="0.0,205.0" targetAnchor="55.0,71.0" dashed="true" superClass="_CqOgkE8TEeqmpt2mecgBkw" subClass="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CMzkwk8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4Ad5U8TEeqmpt2mecgBkw" sourceX="-1681" targetX="95" targetY="381"/>
+    <bendpoints xmi:id="_C4BE8E8TEeqmpt2mecgBkw" sourceX="-1681" sourceY="-353" targetX="95" targetY="28"/>
+    <bendpoints xmi:id="_C4BE8U8TEeqmpt2mecgBkw" sourceX="-1776" sourceY="-353" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqMrY08TEeqmpt2mecgBkw" sourceAnchor="217.0,232.0" targetAnchor="55.0,71.0" dashed="true" superClass="_CqOgkE8TEeqmpt2mecgBkw" subClass="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNBnMU8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4DhNE8TEeqmpt2mecgBkw" sourceY="416" targetX="965" targetY="722"/>
+    <bendpoints xmi:id="_C4DhNU8TEeqmpt2mecgBkw" sourceX="-1035" sourceY="416" targetX="-70" targetY="722"/>
+    <bendpoints xmi:id="_C4DhNk8TEeqmpt2mecgBkw" sourceX="-1035" sourceY="-278" targetX="-70" targetY="28"/>
+    <bendpoints xmi:id="_C4DhN08TEeqmpt2mecgBkw" sourceX="-965" sourceY="-278" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqQVwU8TEeqmpt2mecgBkw" targetItem="_CqRj4E8TEeqmpt2mecgBkw" sourceItem="_CqQVwE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CqQVwk8TEeqmpt2mecgBkw" sourceAnchor="194.0,194.0" targetAnchor="64.0,71.0" dashed="true" superClass="_CqRj4E8TEeqmpt2mecgBkw" subClass="_CpQ3QE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CM32ME8TEeqmpt2mecgBkw"/>
+    <bendpoints xmi:id="_C4CTFE8TEeqmpt2mecgBkw" sourceY="446" targetX="1636" targetY="695"/>
+    <bendpoints xmi:id="_C4CTFU8TEeqmpt2mecgBkw" sourceX="-1636" sourceY="446" targetY="695"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqTZEE8TEeqmpt2mecgBkw" targetItem="_CqXDcE8TEeqmpt2mecgBkw" sourceItem="_CqSyAE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CqTZEU8TEeqmpt2mecgBkw" source="_CqXDcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN80QU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CqV1UE8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN9bUE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CqVOQE8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CqVOQU8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN80Qk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqV1Vk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqV1VU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CqVOQk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="malik-ims.uml#_CNYMhE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqWcYU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqWcYE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CqTZEk8TEeqmpt2mecgBkw" source="_CqXDcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN9bUU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CqV1VE8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN-CYE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CqV1UU8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CqV1Uk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN9bUk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqWcY08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqWcYk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CqV1U08TEeqmpt2mecgBkw" aggregationKind="NONE" name="connection" navigable="true">
+      <modelElement href="malik-ims.uml#_CNZaok8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqWcZU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CqWcZE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqUAIU8TEeqmpt2mecgBkw" targetItem="_CqXDhk8TEeqmpt2mecgBkw" sourceItem="_CqUAIE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqUAI08TEeqmpt2mecgBkw" targetItem="_CqXDjE8TEeqmpt2mecgBkw" sourceItem="_CqUAIk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqUnMU8TEeqmpt2mecgBkw" targetItem="_CqXDj08TEeqmpt2mecgBkw" sourceItem="_CqUnME8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqUnM08TEeqmpt2mecgBkw" targetItem="_CqXDlE8TEeqmpt2mecgBkw" sourceItem="_CqUnMk8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_CqUnNU8TEeqmpt2mecgBkw" targetItem="_CqXDnE8TEeqmpt2mecgBkw" sourceItem="_CqUnNE8TEeqmpt2mecgBkw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CqgNYE8TEeqmpt2mecgBkw" source="_CqhbiU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN6_EU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CqgNYU8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN7mIE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_CqgNYk8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_CqgNY08TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN6_Ek8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqgNZE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqgNZU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_CqgNZk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="INPUT" navigable="true">
+      <modelElement href="malik-ims.uml#_CNXlcU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqgNZ08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqgNaE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Cqg0cE8TEeqmpt2mecgBkw" source="_CqhbiU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN7mIU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_Cqg0cU8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN8NME8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Cqg0ck8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_Cqg0c08TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN7mIk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cqg0dE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqg0dU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Cqg0dk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="INPUT2" navigable="true">
+      <modelElement href="malik-ims.uml#_CNYMgE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cqg0d08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqg0eE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_CqhbgE8TEeqmpt2mecgBkw" source="_CqhbiU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CN8NMU8TEeqmpt2mecgBkw"/>
+    <stereotypes xmi:id="_CqhbgU8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CN80QE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Cqhbgk8TEeqmpt2mecgBkw" text=""/>
+    <sourceRole xmi:id="_Cqhbg08TEeqmpt2mecgBkw" aggregationKind="NONE" name="">
+      <modelElement href="malik-ims.uml#_CN8NMk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqhbhE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqhbhU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Cqhbhk8TEeqmpt2mecgBkw" aggregationKind="NONE" name="INPUT3" navigable="true">
+      <modelElement href="malik-ims.uml#_CNYMgk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cqhbh08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqhbiE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnEe4E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnLMkE8TEeqmpt2mecgBkw" text="this class allows a connection between java and the Items' table" item="_CnZ2GU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNv_9E8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnO28E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnPeAE8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during&#xD;&#xA;&#x9; * the run" item="_CnZ2L08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnAE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnQFEE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnQsIE8TEeqmpt2mecgBkw" text="use this constructor if you have already got access to the database&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @param name  - database name&#xD;&#xA;&#x9; * @param pWord - database password" item="_CnZ2NU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnAU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnQsIU8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnQsIk8TEeqmpt2mecgBkw" text="adds an item to the database (authorisation needed)" item="_CnZ2QU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnAk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnQsI08TEeqmpt2mecgBkw" sourceConnectionVisual="_CnQsJE8TEeqmpt2mecgBkw" text="allows you change the name and a price of an item (authorisation needed)" item="_CnZ2RE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnA08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnRTME8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnRTMU8TEeqmpt2mecgBkw" text="allows you to delete an item in the database (authorisation needed)" item="_CnZ2R08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnBE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnRTMk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnR6QE8TEeqmpt2mecgBkw" text="allows people to see all items in the database&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @return - Items' table" item="_CnZ2Sk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnBU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CnR6QU8TEeqmpt2mecgBkw" sourceConnectionVisual="_CnR6Qk8TEeqmpt2mecgBkw" text="closes this DAO down when called" item="_CnZ2T08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnBk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Co5q4E8TEeqmpt2mecgBkw" sourceConnectionVisual="_Co5q4U8TEeqmpt2mecgBkw" text="this class allows a connection between java and the Customers' table" item="_Co_KcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNv_8E8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Co65AE8TEeqmpt2mecgBkw" sourceConnectionVisual="_Co65AU8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during&#xD;&#xA;&#x9; * the run" item="_Co_Khk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNv_8U8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Co65Ak8TEeqmpt2mecgBkw" sourceConnectionVisual="_Co65A08TEeqmpt2mecgBkw" text="use this constructor if you have already got access to the database&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @param name  - database name&#xD;&#xA;&#x9; * @param pWord - database password" item="_Co_KjE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNv_8k8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Co7gEE8TEeqmpt2mecgBkw" sourceConnectionVisual="_Co7gEU8TEeqmpt2mecgBkw" text="closes this DAO down when called" item="_Co_KmE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNv_808TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpMl0E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpMl0U8TEeqmpt2mecgBkw" text="this class allows a connection between java and the Orders' table" item="_CpQ3QE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOEE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpNM4E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpNM4U8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during the run" item="_CpQ3TE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOEU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpNM4k8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpNM408TEeqmpt2mecgBkw" text="use this constructor if you have already got access to the database&#xD;&#xA;     *&#xD;&#xA;     * @param name  - database name&#xD;&#xA;     * @param pWord - database password" item="_CpQ3Uk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOEk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpNz8E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpNz8U8TEeqmpt2mecgBkw" text="closes this DAO down when called" item="_CpQ3Xk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOE08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpNz8k8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpNz808TEeqmpt2mecgBkw" text="updates the total price the order&#xD;&#xA;     *&#xD;&#xA;     * @param ordersID - this will be the id you want to set the totol for" item="_CpQ3YU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOFE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpObAE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpObAU8TEeqmpt2mecgBkw" text="adds a new order into the database&#xD;&#xA;     *&#xD;&#xA;     * @return - orderID so the OrderItems' table can take multiple items with the same Orders' id" item="_CpQ3Z08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOFU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpObAk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpObA08TEeqmpt2mecgBkw" text="allows people to see all the orders that have been made&#xD;&#xA;     * @return - Orders' table" item="_CpQ3bE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOFk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpWW0E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpWW0U8TEeqmpt2mecgBkw" text="this class allows a connection between java and the OrderedItems' table" item="_Cpb2YE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnB08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpW94U8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpW94k8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during the run" item="_Cpb2dk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnCE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpXk8E8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpXk8U8TEeqmpt2mecgBkw" text="use this constructor if you have already got access to the database&#xD;&#xA;     *&#xD;&#xA;     * @param name  - database name&#xD;&#xA;     * @param pWord - database password" item="_Cpb2fE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnCU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpXk8k8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpXk808TEeqmpt2mecgBkw" text="closes this DAO down when called" item="_Cpb2iE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnCk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpYMAE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpYMAU8TEeqmpt2mecgBkw" text="allows customers to add orders to there basket&#xD;&#xA;     *&#xD;&#xA;     * @param ordersID - this will be order number of the order&#xD;&#xA;     * @return - this will return the OrdersID so that total amount can be calculated for this specific order" item="_Cpb2i08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnC08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpYMAk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpYMA08TEeqmpt2mecgBkw" text="shows the details of a specific order that a customer has made&#xD;&#xA;     *&#xD;&#xA;     * @return - specific customer's order" item="_Cpb2k08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnDE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpYzEE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpYzEU8TEeqmpt2mecgBkw" text="allows customer to change there item&#xD;&#xA;     *&#xD;&#xA;     * @return" item="_Cpb2mE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnDU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpYzEk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpYzE08TEeqmpt2mecgBkw" text="deletes an item from an order" item="_Cpb2nU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNwnDk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Cph9AE8TEeqmpt2mecgBkw" sourceConnectionVisual="_Cph9AU8TEeqmpt2mecgBkw" text="this class allows a connection between java and the Users' table&#xD;&#xA;(all methods in this class need authorisation by a user)" item="_Cpm1gE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1J08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjLIE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpjLIU8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during the run" item="_Cpm1jE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1KE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjLIk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpjLI08TEeqmpt2mecgBkw" text="use this constructor if you have already got access to the database&#xD;&#xA;     *&#xD;&#xA;     * @param name  - database name&#xD;&#xA;     * @param pWord - database password" item="_Cpm1kk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1KU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjyME8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpjyMU8TEeqmpt2mecgBkw" text="needs a verified user to return true" item="_Cpm1nk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1Kk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjyMk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpjyM08TEeqmpt2mecgBkw" text="adds a user into the database" item="_Cpm1o08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1K08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjyNE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpjyNU8TEeqmpt2mecgBkw" text="allows user to change password" item="_Cpm1pk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1LE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpjyNk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpkZQE8TEeqmpt2mecgBkw" text="closes this DAO down when called" item="_Cpm1qU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNycME8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpkZQU8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpkZQk8TEeqmpt2mecgBkw" text="deletes a user from the database" item="_Cpm1rE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNycMU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpkZQ08TEeqmpt2mecgBkw" sourceConnectionVisual="_CpkZRE8TEeqmpt2mecgBkw" text="allows users to see other users on the database&#xD;&#xA;     *&#xD;&#xA;     * @return - the users table" item="_Cpm1r08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNycMk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CpsVEE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CpsVEU8TEeqmpt2mecgBkw" text="create CRUD functionality that allows for a parameter and int return type" item="_CpuKQE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOGE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Cp-o8E8TEeqmpt2mecgBkw" sourceConnectionVisual="_Cp_QAE8TEeqmpt2mecgBkw" text="delete CRUD functionality" item="_CqBsQE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOGk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqC6YE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqC6YU8TEeqmpt2mecgBkw" text="read CRUD functionality" item="_CqFWoE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOG08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqGkwE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqGkwU8TEeqmpt2mecgBkw" text="update CRUD functionality that allows for int return type" item="_CqHy4E8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1IE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqJBAE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqJBAU8TEeqmpt2mecgBkw" text="create CRUD functionality" item="_CqK2ME8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOF08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqMEUE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqMrYE8TEeqmpt2mecgBkw" text="update CRUD functionality" item="_CqOgkE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOHE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqQVwE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqQVwU8TEeqmpt2mecgBkw" text="create CRUD functionality that allows for int return type" item="_CqRj4E8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNxOGU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqSyAE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqTZEE8TEeqmpt2mecgBkw" text="this is the menu of the system" item="_CqXDcE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1IU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqUAIE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqUAIU8TEeqmpt2mecgBkw" text="use this constructor if this is your first connection to the database during&#xD;&#xA;&#x9; * the run" item="_CqXDhk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1Ik8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqUAIk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqUAI08TEeqmpt2mecgBkw" text="displays the menu" item="_CqXDjE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1I08TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqUnME8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqUnMU8TEeqmpt2mecgBkw" text="which table do you want to use?&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @return - passes input onto chooseCRUD method" item="_CqXDj08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1JE8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqUnMk8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqUnM08TEeqmpt2mecgBkw" text="which CRUD do you want to use?&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @param f - chooseTable input&#xD;&#xA;&#x9; * @return - completed user's input" item="_CqXDlE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1JU8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_CqUnNE8TEeqmpt2mecgBkw" sourceConnectionVisual="_CqUnNU8TEeqmpt2mecgBkw" text="picks the corresponding functionality depending on input&#xD;&#xA;&#x9; *&#xD;&#xA;&#x9; * @param f - determines which functionality will be used" item="_CqXDnE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CNx1Jk8TEeqmpt2mecgBkw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CnZ2GU8TEeqmpt2mecgBkw" comments="_CnEe4E8TEeqmpt2mecgBkw" targetConnectionVisual="_CnLMkE8TEeqmpt2mecgBkw" name="MySQLItemsDAO" associationsOut="_CnYn8E8TEeqmpt2mecgBkw _CnZ2EE8TEeqmpt2mecgBkw" generalizations="_Cp_QAk8TEeqmpt2mecgBkw _CqDhcE8TEeqmpt2mecgBkw _CqJoEE8TEeqmpt2mecgBkw _CqMrYk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CJjccE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CnZ2Gk8TEeqmpt2mecgBkw" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CnZ2G08TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_CnZ2HE8TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNTUAE8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CnZ2HU8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNTUAU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CnZ2Hk8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CnZ2H08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CnZ2IE8TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CnZ2IU8TEeqmpt2mecgBkw" name="name">
+      <modelElement href="malik-ims.uml#_CNTUAk8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CnZ2Ik8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNT7EE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CnZ2I08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CnZ2JE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CnZ2JU8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CnZ2Jk8TEeqmpt2mecgBkw" name="pWord">
+      <modelElement href="malik-ims.uml#_CNT7EU8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CnZ2J08TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNUiIE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CnZ2KE8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CnZ2KU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CnZ2Kk8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CnZ2K08TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(MySQLItemsDAO.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNUiIU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2LE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2LU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CnZ2Lk8TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_CnZ2L08TEeqmpt2mecgBkw" comments="_CnO28E8TEeqmpt2mecgBkw" targetConnectionVisual="_CnPeAE8TEeqmpt2mecgBkw" name="MySQLItemsDAO">
+      <modelElement href="malik-ims.uml#_CJlRoE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_CnZ2ME8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_CnZ2MU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2Mk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CnZ2M08TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJlRo08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CnZ2NE8TEeqmpt2mecgBkw" name="MySQLItemsDAO">
+          <modelElement href="malik-ims.uml#_CJjccE8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CnZ2NU8TEeqmpt2mecgBkw" comments="_CnQFEE8TEeqmpt2mecgBkw" targetConnectionVisual="_CnQsIE8TEeqmpt2mecgBkw" name="MySQLItemsDAO">
+      <modelElement href="malik-ims.uml#_CJl4sE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_CnZ2Nk8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_CnZ2N08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2OE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CnZ2OU8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJmfwk8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CnZ2Ok8TEeqmpt2mecgBkw" name="MySQLItemsDAO">
+          <modelElement href="malik-ims.uml#_CJjccE8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_CnZ2O08TEeqmpt2mecgBkw" name="name">
+        <modelElement href="malik-ims.uml#_CJl4sU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CnZ2PE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CnZ2PU8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_CnZ2Pk8TEeqmpt2mecgBkw" name="pWord">
+        <modelElement href="malik-ims.uml#_CJl4sk8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CnZ2P08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CnZ2QE8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_CnZ2QU8TEeqmpt2mecgBkw" comments="_CnQsIU8TEeqmpt2mecgBkw" targetConnectionVisual="_CnQsIk8TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CJmfw08TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2Qk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2Q08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_CnZ2RE8TEeqmpt2mecgBkw" comments="_CnQsI08TEeqmpt2mecgBkw" targetConnectionVisual="_CnQsJE8TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CJnG0E8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2RU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2Rk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_CnZ2R08TEeqmpt2mecgBkw" comments="_CnRTME8TEeqmpt2mecgBkw" targetConnectionVisual="_CnRTMU8TEeqmpt2mecgBkw" name="delete">
+      <modelElement href="malik-ims.uml#_CJnG0U8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2SE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2SU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_CnZ2Sk8TEeqmpt2mecgBkw" comments="_CnRTMk8TEeqmpt2mecgBkw" targetConnectionVisual="_CnR6QE8TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CJnG0k8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2S08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2TE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CnZ2TU8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNGfsE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CnZ2Tk8TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CnZ2T08TEeqmpt2mecgBkw" comments="_CnR6QU8TEeqmpt2mecgBkw" targetConnectionVisual="_CnR6Qk8TEeqmpt2mecgBkw" name="closeConnection">
+      <modelElement href="malik-ims.uml#_CJoU8E8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CnZ2UE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CnZ2UU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Co_KcE8TEeqmpt2mecgBkw" comments="_Co5q4E8TEeqmpt2mecgBkw" targetConnectionVisual="_Co5q4U8TEeqmpt2mecgBkw" name="MySQLCustomerDAO" associationsOut="_Co6R8E8TEeqmpt2mecgBkw _Co6R8U8TEeqmpt2mecgBkw" generalizations="_Cp_QAU8TEeqmpt2mecgBkw _CqC6Yk8TEeqmpt2mecgBkw _CqJBAk8TEeqmpt2mecgBkw _CqMrYU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CJKa4E8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Co_KcU8TEeqmpt2mecgBkw" position="525.0,-91.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Co_Kck8TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_Co_Kc08TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNQ3wE8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_KdE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNRe0E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_KdU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Co_Kdk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Co_Kd08TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Co_KeE8TEeqmpt2mecgBkw" name="name">
+      <modelElement href="malik-ims.uml#_CNRe0U8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_KeU8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNSF4E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_Kek8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Co_Ke08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Co_KfE8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Co_KfU8TEeqmpt2mecgBkw" name="pWord">
+      <modelElement href="malik-ims.uml#_CNSF4U8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_Kfk8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNSF4k8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_Kf08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Co_KgE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Co_KgU8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Co_Kgk8TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(MySQLCustomerDAO.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNSs8E8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co_Kg08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_KhE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Co_KhU8TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Co_Khk8TEeqmpt2mecgBkw" comments="_Co65AE8TEeqmpt2mecgBkw" targetConnectionVisual="_Co65AU8TEeqmpt2mecgBkw" name="MySQLCustomerDAO">
+      <modelElement href="malik-ims.uml#_CJRvoE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Co_Kh08TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Co_KiE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_KiU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Co_Kik8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJZEYk8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Co_Ki08TEeqmpt2mecgBkw" name="MySQLCustomerDAO">
+          <modelElement href="malik-ims.uml#_CJKa4E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Co_KjE8TEeqmpt2mecgBkw" comments="_Co65Ak8TEeqmpt2mecgBkw" targetConnectionVisual="_Co65A08TEeqmpt2mecgBkw" name="MySQLCustomerDAO">
+      <modelElement href="malik-ims.uml#_CJZrcE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Co_KjU8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Co_Kjk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_Kj08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Co_KkE8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJaShE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Co_KkU8TEeqmpt2mecgBkw" name="MySQLCustomerDAO">
+          <modelElement href="malik-ims.uml#_CJKa4E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Co_Kkk8TEeqmpt2mecgBkw" name="name">
+        <modelElement href="malik-ims.uml#_CJaSgE8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Co_Kk08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Co_KlE8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Co_KlU8TEeqmpt2mecgBkw" name="pWord">
+        <modelElement href="malik-ims.uml#_CJaSgU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Co_Klk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Co_Kl08TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Co_KmE8TEeqmpt2mecgBkw" comments="_Co7gEE8TEeqmpt2mecgBkw" targetConnectionVisual="_Co7gEU8TEeqmpt2mecgBkw" name="closeConnection">
+      <modelElement href="malik-ims.uml#_CJa5kE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Co_KmU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_Kmk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Co_Km08TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CJa5kU8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_KnE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CJbgoE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Co_KnU8TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CJcHsE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_Knk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_Kn08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Co_KoE8TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CJcuwE8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_KoU8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CJcuwU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Co_Kok8TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CJdV0E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_Ko08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_KpE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Co_KpU8TEeqmpt2mecgBkw" name="delete">
+      <modelElement href="malik-ims.uml#_CJdV0k8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_Kpk8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CJd84E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Co_Kp08TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CJej8E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_KqE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_KqU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Co_Kqk8TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CJej8k8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Co_Kq08TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CJfLAE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Co_KrE8TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CJfyEE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Co_KrU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Co_Krk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Co_Kr08TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNFRkE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Co_KsE8TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CpQ3QE8TEeqmpt2mecgBkw" comments="_CpMl0E8TEeqmpt2mecgBkw" targetConnectionVisual="_CpMl0U8TEeqmpt2mecgBkw" name="MySQLOrdersDAO" associationsOut="_CpMl0k8TEeqmpt2mecgBkw _CpMl008TEeqmpt2mecgBkw" generalizations="_CqDhcU8TEeqmpt2mecgBkw _CqQVwk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKOK0E8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CpQ3QU8TEeqmpt2mecgBkw" position="-509.0,-34.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CpQ3Qk8TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_CpQ3Q08TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNW-YE8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CpQ3RE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNW-YU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CpQ3RU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CpQ3Rk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CpQ3R08TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CpQ3SE8TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(MySQLOrdersDAO.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNW-Yk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQ3SU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3Sk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CpQ3S08TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_CpQ3TE8TEeqmpt2mecgBkw" comments="_CpNM4E8TEeqmpt2mecgBkw" targetConnectionVisual="_CpNM4U8TEeqmpt2mecgBkw" name="MySQLOrdersDAO">
+      <modelElement href="malik-ims.uml#_CKQAAE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_CpQ3TU8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_CpQ3Tk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3T08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CpQ3UE8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKQAA08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CpQ3UU8TEeqmpt2mecgBkw" name="MySQLOrdersDAO">
+          <modelElement href="malik-ims.uml#_CKOK0E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CpQ3Uk8TEeqmpt2mecgBkw" comments="_CpNM4k8TEeqmpt2mecgBkw" targetConnectionVisual="_CpNM408TEeqmpt2mecgBkw" name="MySQLOrdersDAO">
+      <modelElement href="malik-ims.uml#_CKQnEE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_CpQ3U08TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_CpQ3VE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3VU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CpQ3Vk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKROI08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CpQ3V08TEeqmpt2mecgBkw" name="MySQLOrdersDAO">
+          <modelElement href="malik-ims.uml#_CKOK0E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_CpQ3WE8TEeqmpt2mecgBkw" name="name">
+        <modelElement href="malik-ims.uml#_CKQnEU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CpQ3WU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CpQ3Wk8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_CpQ3W08TEeqmpt2mecgBkw" name="pWord">
+        <modelElement href="malik-ims.uml#_CKROIE8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CpQ3XE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CpQ3XU8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_CpQ3Xk8TEeqmpt2mecgBkw" comments="_CpNz8E8TEeqmpt2mecgBkw" targetConnectionVisual="_CpNz8U8TEeqmpt2mecgBkw" name="closeConnection">
+      <modelElement href="malik-ims.uml#_CKROJE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQ3X08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3YE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_CpQ3YU8TEeqmpt2mecgBkw" comments="_CpNz8k8TEeqmpt2mecgBkw" targetConnectionVisual="_CpNz808TEeqmpt2mecgBkw" name="addTotal">
+      <modelElement href="malik-ims.uml#_CKScQE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQ3Yk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3Y08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_CpQ3ZE8TEeqmpt2mecgBkw" name="ordersID">
+        <modelElement href="malik-ims.uml#_CKScQU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CpQ3ZU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CpQ3Zk8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_CpQ3Z08TEeqmpt2mecgBkw" comments="_CpObAE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpObAU8TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CKScQk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQ3aE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3aU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CpQ3ak8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKTDUE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CpQ3a08TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CpQ3bE8TEeqmpt2mecgBkw" comments="_CpObAk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpObA08TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CKTDUU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpQ3bU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpQ3bk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CpQ3b08TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNHt0E8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CpQ3cE8TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Cpb2YE8TEeqmpt2mecgBkw" comments="_CpWW0E8TEeqmpt2mecgBkw" targetConnectionVisual="_CpWW0U8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO" associationsOut="_CpWW0k8TEeqmpt2mecgBkw _CpW94E8TEeqmpt2mecgBkw" generalizations="_Cps8IE8TEeqmpt2mecgBkw _Cp_QA08TEeqmpt2mecgBkw _CqHL0E8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CJrYQE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Cpb2YU8TEeqmpt2mecgBkw" position="1065.0,-91.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Cpb2Yk8TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_Cpb2Y08TEeqmpt2mecgBkw" name="name">
+      <modelElement href="malik-ims.uml#_CNVJME8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Cpb2ZE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNVJMU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Cpb2ZU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Cpb2Zk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpb2Z08TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Cpb2aE8TEeqmpt2mecgBkw" name="pWord">
+      <modelElement href="malik-ims.uml#_CNVJMk8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Cpb2aU8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNVwQE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Cpb2ak8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Cpb2a08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpb2bE8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Cpb2bU8TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNVwQU8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Cpb2bk8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNWXUE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Cpb2b08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Cpb2cE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpb2cU8TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Cpb2ck8TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(MySQLOrderedItemsDAO.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNWXUU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2c08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2dE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpb2dU8TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Cpb2dk8TEeqmpt2mecgBkw" comments="_CpW94U8TEeqmpt2mecgBkw" targetConnectionVisual="_CpW94k8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO">
+      <modelElement href="malik-ims.uml#_CJtNcE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Cpb2d08TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Cpb2eE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2eU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpb2ek8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJtNc08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpb2e08TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO">
+          <modelElement href="malik-ims.uml#_CJrYQE8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Cpb2fE8TEeqmpt2mecgBkw" comments="_CpXk8E8TEeqmpt2mecgBkw" targetConnectionVisual="_CpXk8U8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO">
+      <modelElement href="malik-ims.uml#_CJt0gE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Cpb2fU8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Cpb2fk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2f08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpb2gE8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJt0hU8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpb2gU8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO">
+          <modelElement href="malik-ims.uml#_CJrYQE8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Cpb2gk8TEeqmpt2mecgBkw" name="name">
+        <modelElement href="malik-ims.uml#_CJt0gU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cpb2g08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cpb2hE8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Cpb2hU8TEeqmpt2mecgBkw" name="pWord">
+        <modelElement href="malik-ims.uml#_CJt0gk8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cpb2hk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cpb2h08TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Cpb2iE8TEeqmpt2mecgBkw" comments="_CpXk8k8TEeqmpt2mecgBkw" targetConnectionVisual="_CpXk808TEeqmpt2mecgBkw" name="closeConnection">
+      <modelElement href="malik-ims.uml#_CJubkE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2iU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2ik8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Cpb2i08TEeqmpt2mecgBkw" comments="_CpYMAE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpYMAU8TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CJubkU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2jE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2jU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpb2jk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJvCoU8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpb2j08TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Cpb2kE8TEeqmpt2mecgBkw" name="ordersID">
+        <modelElement href="malik-ims.uml#_CJvCoE8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cpb2kU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cpb2kk8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Cpb2k08TEeqmpt2mecgBkw" comments="_CpYMAk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpYMA08TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CJvCok8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2lE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2lU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpb2lk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNHGwE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpb2l08TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Cpb2mE8TEeqmpt2mecgBkw" comments="_CpYzEE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpYzEU8TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CJvpsE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2mU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2mk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpb2m08TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CJvpsU8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpb2nE8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Cpb2nU8TEeqmpt2mecgBkw" comments="_CpYzEk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpYzE08TEeqmpt2mecgBkw" name="delete">
+      <modelElement href="malik-ims.uml#_CJvpsk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpb2nk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpb2n08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Cpm1gE8TEeqmpt2mecgBkw" comments="_Cph9AE8TEeqmpt2mecgBkw" targetConnectionVisual="_Cph9AU8TEeqmpt2mecgBkw" name="MySQLUsersDAO" associationsOut="_CpikEE8TEeqmpt2mecgBkw _CpikEU8TEeqmpt2mecgBkw" generalizations="_Cp_QBE8TEeqmpt2mecgBkw _CqDhck8TEeqmpt2mecgBkw _CqJoEU8TEeqmpt2mecgBkw _CqMrY08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKsr8E8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Cpm1gU8TEeqmpt2mecgBkw" position="-998.0,-72.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Cpm1gk8TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_Cpm1g08TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNaBsU8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Cpm1hE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNaowE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Cpm1hU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_Cpm1hk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpm1h08TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Cpm1iE8TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(MySQLUsersDAO.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNaowU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1iU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1ik8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cpm1i08TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Cpm1jE8TEeqmpt2mecgBkw" comments="_CpjLIE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpjLIU8TEeqmpt2mecgBkw" name="MySQLUsersDAO">
+      <modelElement href="malik-ims.uml#_CKuhIE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Cpm1jU8TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Cpm1jk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1j08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpm1kE8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKuhI08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpm1kU8TEeqmpt2mecgBkw" name="MySQLUsersDAO">
+          <modelElement href="malik-ims.uml#_CKsr8E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Cpm1kk8TEeqmpt2mecgBkw" comments="_CpjLIk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpjLI08TEeqmpt2mecgBkw" name="MySQLUsersDAO">
+      <modelElement href="malik-ims.uml#_CKvIME8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_Cpm1k08TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_Cpm1lE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1lU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpm1lk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKvvQ08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpm1l08TEeqmpt2mecgBkw" name="MySQLUsersDAO">
+          <modelElement href="malik-ims.uml#_CKsr8E8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Cpm1mE8TEeqmpt2mecgBkw" name="name">
+        <modelElement href="malik-ims.uml#_CKvIMU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cpm1mU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cpm1mk8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Cpm1m08TEeqmpt2mecgBkw" name="pWord">
+        <modelElement href="malik-ims.uml#_CKvvQE8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cpm1nE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cpm1nU8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Cpm1nk8TEeqmpt2mecgBkw" comments="_CpjyME8TEeqmpt2mecgBkw" targetConnectionVisual="_CpjyMU8TEeqmpt2mecgBkw" name="authenticate">
+      <modelElement href="malik-ims.uml#_CKvvRE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1n08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1oE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpm1oU8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKwWUE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpm1ok8TEeqmpt2mecgBkw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Cpm1o08TEeqmpt2mecgBkw" comments="_CpjyMk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpjyM08TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CKwWUU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1pE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1pU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Cpm1pk8TEeqmpt2mecgBkw" comments="_CpjyNE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpjyNU8TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CKwWUk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1p08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1qE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Cpm1qU8TEeqmpt2mecgBkw" comments="_CpjyNk8TEeqmpt2mecgBkw" targetConnectionVisual="_CpkZQE8TEeqmpt2mecgBkw" name="closeConnection">
+      <modelElement href="malik-ims.uml#_CKw9YE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1qk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1q08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Cpm1rE8TEeqmpt2mecgBkw" comments="_CpkZQU8TEeqmpt2mecgBkw" targetConnectionVisual="_CpkZQk8TEeqmpt2mecgBkw" name="delete">
+      <modelElement href="malik-ims.uml#_CKw9YU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1rU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1rk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Cpm1r08TEeqmpt2mecgBkw" comments="_CpkZQ08TEeqmpt2mecgBkw" targetConnectionVisual="_CpkZRE8TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CKw9Yk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cpm1sE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cpm1sU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Cpm1sk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNPpoE8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_Cpm1s08TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CpuKQE8TEeqmpt2mecgBkw" comments="_CpsVEE8TEeqmpt2mecgBkw" targetConnectionVisual="_CpsVEU8TEeqmpt2mecgBkw" name="CreateParam" subclassedBy="_Cps8IE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKYi4U8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CpuxUE8TEeqmpt2mecgBkw" position="1932.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CpuxUU8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CpuxUk8TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CKZxAE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CpuxU08TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CpuxVE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CpuxVU8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKZxAk8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CpuxVk8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_CpuxV08TEeqmpt2mecgBkw" name="orderID">
+        <modelElement href="malik-ims.uml#_CKZxAU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CpuxWE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CpuxWU8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Cp9a0E8TEeqmpt2mecgBkw" name="UpdateParam">
+    <modelElement href="malik-ims.uml#_CKepgE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Cp9a0U8TEeqmpt2mecgBkw" position="1650.0,89.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Cp9a0k8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_Cp9a008TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CKfQkE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_Cp9a1E8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cp9a1U8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Cp9a1k8TEeqmpt2mecgBkw" name="orderID">
+        <modelElement href="malik-ims.uml#_CKfQkU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_Cp9a108TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_Cp9a2E8TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqBsQE8TEeqmpt2mecgBkw" comments="_Cp-o8E8TEeqmpt2mecgBkw" targetConnectionVisual="_Cp_QAE8TEeqmpt2mecgBkw" name="Delete" subclassedBy="_Cp_QAU8TEeqmpt2mecgBkw _Cp_QAk8TEeqmpt2mecgBkw _Cp_QA08TEeqmpt2mecgBkw _Cp_QBE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKbmME8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqBsQU8TEeqmpt2mecgBkw" position="337.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqBsQk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqBsQ08TEeqmpt2mecgBkw" name="delete">
+      <modelElement href="malik-ims.uml#_CKbmMU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqBsRE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqBsRU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqFWoE8TEeqmpt2mecgBkw" comments="_CqC6YE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqC6YU8TEeqmpt2mecgBkw" name="Read" subclassedBy="_CqC6Yk8TEeqmpt2mecgBkw _CqDhcE8TEeqmpt2mecgBkw _CqDhcU8TEeqmpt2mecgBkw _CqDhck8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKcNQE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqFWoU8TEeqmpt2mecgBkw" position="-1007.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqFWok8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqFWo08TEeqmpt2mecgBkw" name="read">
+      <modelElement href="malik-ims.uml#_CKc0UE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqFWpE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqFWpU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqFWpk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CNIU4E8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqFWp08TEeqmpt2mecgBkw" name="ResultSet">
+          <modelElement href="malik-ims.uml#_CM65gU8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqHy4E8TEeqmpt2mecgBkw" comments="_CqGkwE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqGkwU8TEeqmpt2mecgBkw" name="UpdateReturn" subclassedBy="_CqHL0E8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKf3oE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqHy4U8TEeqmpt2mecgBkw" position="2194.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqHy4k8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqHy408TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CKgesE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqHy5E8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqHy5U8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqHy5k8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKgesU8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqHy508TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqK2ME8TEeqmpt2mecgBkw" comments="_CqJBAE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqJBAU8TEeqmpt2mecgBkw" name="Create" subclassedBy="_CqJBAk8TEeqmpt2mecgBkw _CqJoEE8TEeqmpt2mecgBkw _CqJoEU8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKX70U8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqK2MU8TEeqmpt2mecgBkw" position="1385.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqK2Mk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqK2M08TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CKYi4E8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqK2NE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqK2NU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqOgkE8TEeqmpt2mecgBkw" comments="_CqMEUE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqMrYE8TEeqmpt2mecgBkw" name="Update" subclassedBy="_CqMrYU8TEeqmpt2mecgBkw _CqMrYk8TEeqmpt2mecgBkw _CqMrY08TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKdbYE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqOgkU8TEeqmpt2mecgBkw" position="-1801.0,-217.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqOgkk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqOgk08TEeqmpt2mecgBkw" name="update">
+      <modelElement href="malik-ims.uml#_CKeCcE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqOglE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqOglU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_CqRj4E8TEeqmpt2mecgBkw" comments="_CqQVwE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqQVwU8TEeqmpt2mecgBkw" name="CreateReturn" subclassedBy="_CqQVwk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKaYEE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqRj4U8TEeqmpt2mecgBkw" position="-2015.0,-160.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqRj4k8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqRj408TEeqmpt2mecgBkw" name="create">
+      <modelElement href="malik-ims.uml#_CKa_IE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqRj5E8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqRj5U8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqRj5k8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKa_IU8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqRj508TEeqmpt2mecgBkw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CqXDcE8TEeqmpt2mecgBkw" comments="_CqSyAE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqTZEE8TEeqmpt2mecgBkw" name="Control" associationsOut="_CqTZEU8TEeqmpt2mecgBkw _CqTZEk8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKnMYE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqXDcU8TEeqmpt2mecgBkw" position="1920.0,-53.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqXDck8TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_CqXDc08TEeqmpt2mecgBkw" defaultValue="Logger.getLogger(Control.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNYMhE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqXDdE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDdU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CqXDdk8TEeqmpt2mecgBkw" name="Logger">
+        <modelElement href="malik-ims.uml#_CMro8E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CqXDd08TEeqmpt2mecgBkw" name="name">
+      <modelElement href="malik-ims.uml#_CNYzkU8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CqXDeE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNYzkk8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CqXDeU8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CqXDek8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CqXDe08TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CqXDfE8TEeqmpt2mecgBkw" name="pWord">
+      <modelElement href="malik-ims.uml#_CNZaoE8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CqXDfU8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNZaoU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CqXDfk8TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CqXDf08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CqXDgE8TEeqmpt2mecgBkw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CqXDgU8TEeqmpt2mecgBkw" name="connection">
+      <modelElement href="malik-ims.uml#_CNZaok8TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CqXDgk8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CNaBsE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CqXDg08TEeqmpt2mecgBkw" label="-"/>
+      <cardinality xmi:id="_CqXDhE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_CqXDhU8TEeqmpt2mecgBkw" name="Connection">
+        <modelElement href="malik-ims.uml#_CM-j4E8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_CqXDhk8TEeqmpt2mecgBkw" comments="_CqUAIE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqUAIU8TEeqmpt2mecgBkw" name="Control">
+      <modelElement href="malik-ims.uml#_CKpBkE8TEeqmpt2mecgBkw"/>
+      <keywords xmi:id="_CqXDh08TEeqmpt2mecgBkw" keyword="create"/>
+      <visibility xmi:id="_CqXDiE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDiU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqXDik8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKpBk08TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqXDi08TEeqmpt2mecgBkw" name="Control">
+          <modelElement href="malik-ims.uml#_CKnMYE8TEeqmpt2mecgBkw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CqXDjE8TEeqmpt2mecgBkw" comments="_CqUAIk8TEeqmpt2mecgBkw" targetConnectionVisual="_CqUAI08TEeqmpt2mecgBkw" name="menu">
+      <modelElement href="malik-ims.uml#_CKpooE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqXDjU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDjk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_CqXDj08TEeqmpt2mecgBkw" comments="_CqUnME8TEeqmpt2mecgBkw" targetConnectionVisual="_CqUnMU8TEeqmpt2mecgBkw" name="chooseTable">
+      <modelElement href="malik-ims.uml#_CKpooU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqXDkE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDkU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqXDkk8TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKpook8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqXDk08TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_CqXDlE8TEeqmpt2mecgBkw" comments="_CqUnMk8TEeqmpt2mecgBkw" targetConnectionVisual="_CqUnM08TEeqmpt2mecgBkw" name="chooseCRUD">
+      <modelElement href="malik-ims.uml#_CKqPsE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqXDlU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDlk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_CqXDl08TEeqmpt2mecgBkw">
+        <modelElement href="malik-ims.uml#_CKqPsk8TEeqmpt2mecgBkw"/>
+        <type xmi:id="_CqXDmE8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_CqXDmU8TEeqmpt2mecgBkw" name="f">
+        <modelElement href="malik-ims.uml#_CKqPsU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CqXDmk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CqXDm08TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_CqXDnE8TEeqmpt2mecgBkw" comments="_CqUnNE8TEeqmpt2mecgBkw" targetConnectionVisual="_CqUnNU8TEeqmpt2mecgBkw" name="choose">
+      <modelElement href="malik-ims.uml#_CKq2wE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqXDnU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqXDnk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_CqXDn08TEeqmpt2mecgBkw" name="f">
+        <modelElement href="malik-ims.uml#_CKq2wU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CqXDoE8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+        <type xmi:id="_CqXDoU8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CqcjAE8TEeqmpt2mecgBkw" name="Runner">
+    <modelElement href="malik-ims.uml#_CKi68E8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqcjAU8TEeqmpt2mecgBkw" position="-1255.0,106.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqcjAk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqcjA08TEeqmpt2mecgBkw" name="main" staticOperation="true">
+      <modelElement href="malik-ims.uml#_CKjiAE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqcjBE8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqcjBU8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_CqcjBk8TEeqmpt2mecgBkw" name="args">
+        <modelElement href="malik-ims.uml#_CKjiAU8TEeqmpt2mecgBkw"/>
+        <cardinality xmi:id="_CqcjB08TEeqmpt2mecgBkw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_CqcjCE8TEeqmpt2mecgBkw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CqdxIE8TEeqmpt2mecgBkw" name="SQLException">
+    <modelElement href="malik-ims.uml#_CM8HoE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqdxIU8TEeqmpt2mecgBkw" position="2289.0,116.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_CqdxIk8TEeqmpt2mecgBkw" name="Reference">
+      <modelElement href="malik-ims.uml#_CM8usE8TEeqmpt2mecgBkw"/>
+    </stereotypes>
+    <visibility xmi:id="_CqdxI08TEeqmpt2mecgBkw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CqhbiU8TEeqmpt2mecgBkw" name="Utils" associationsOut="_CqgNYE8TEeqmpt2mecgBkw _Cqg0cE8TEeqmpt2mecgBkw _CqhbgE8TEeqmpt2mecgBkw">
+    <modelElement href="malik-ims.uml#_CKkwIE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Cqhbik8TEeqmpt2mecgBkw" position="-1606.0,68.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Cqhbi08TEeqmpt2mecgBkw" label="+"/>
+    <attributes xmi:id="_CqhbjE8TEeqmpt2mecgBkw" defaultValue="new Scanner(System.in)" name="INPUT" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNXlcU8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqhbjU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqhbjk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cqhbj08TEeqmpt2mecgBkw" name="Scanner">
+        <modelElement href="malik-ims.uml#_CMyWoE8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CqhbkE8TEeqmpt2mecgBkw" defaultValue="new Scanner(System.in)" name="INPUT2" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNYMgE8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqhbkU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqhbkk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cqhbk08TEeqmpt2mecgBkw" name="Scanner">
+        <modelElement href="malik-ims.uml#_CMyWoE8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_CqhblE8TEeqmpt2mecgBkw" defaultValue="new Scanner(System.in)" name="INPUT3" staticAttribute="true">
+      <modelElement href="malik-ims.uml#_CNYMgk8TEeqmpt2mecgBkw"/>
+      <visibility xmi:id="_CqhblU8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqhblk8TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+      <type xmi:id="_Cqhbl08TEeqmpt2mecgBkw" name="Scanner">
+        <modelElement href="malik-ims.uml#_CMyWoE8TEeqmpt2mecgBkw"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_CqoJME8TEeqmpt2mecgBkw" name="MySQLCustomersDAOTest">
+    <modelElement href="malik-ims.uml#_CKhFwE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_CqoJMU8TEeqmpt2mecgBkw" position="2440.0,106.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_CqoJMk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_CqoJM08TEeqmpt2mecgBkw" name="readTest">
+      <modelElement href="malik-ims.uml#_CKhs008TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_CqoJNE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CKiT4E8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_CqoJNU8TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CKiT4U8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_CqoJNk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_CqoJN08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Cqp-YE8TEeqmpt2mecgBkw" name="ControllerTest">
+    <modelElement href="malik-ims.uml#_CKWGoE8TEeqmpt2mecgBkw"/>
+    <visualProperties xmi:id="_Cqp-YU8TEeqmpt2mecgBkw" position="2672.0,106.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Cqp-Yk8TEeqmpt2mecgBkw" label="+"/>
+    <operations xmi:id="_Cqp-Y08TEeqmpt2mecgBkw" name="chooseTableTest">
+      <modelElement href="malik-ims.uml#_CKWts08TEeqmpt2mecgBkw"/>
+      <stereotypes xmi:id="_Cqp-ZE8TEeqmpt2mecgBkw" name="LegacyStyledElement">
+        <modelElement href="malik-ims.uml#_CKXUwE8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Cqp-ZU8TEeqmpt2mecgBkw" name="Annotations">
+        <modelElement href="malik-ims.uml#_CKXUwU8TEeqmpt2mecgBkw"/>
+      </stereotypes>
+      <visibility xmi:id="_Cqp-Zk8TEeqmpt2mecgBkw" label="+"/>
+      <cardinality xmi:id="_Cqp-Z08TEeqmpt2mecgBkw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

@@ -3,20 +3,20 @@ package com.qa.databases.daos;
 import com.qa.databases.interfaces.CreateReturn;
 import com.qa.databases.interfaces.Read;
 import com.qa.databases.persistances.Utils;
-import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.InputMismatchException;
 
+import org.apache.log4j.Logger;
 /**
  * this class allows a connection between java and the Orders' table
  */
 
 public class MySQLOrdersDAO implements CreateReturn, Read {
 
-    public static final Logger LOGGER = Logger.getLogger(MySQLOrdersDAO.class);
     private Connection connection;
-
+    public static final Logger LOGGER = Logger.getLogger(MySQLOrdersDAO.class);
+    
 
     /**
      * use this constructor if this is your first connection to the database during the run
@@ -65,13 +65,13 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
     /**
      * updates the total price the order
      *
-     * @param ordersID - this will be the ID you want to set the totol for
+     * @param ordersID - this will be the id you want to set the totol for
      */
     public void addTotal(int ordersID) {//ordersid be where?
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate(
-                    "UPDATE Orders SET total= (SELECT sum(price) FROM OrderedItems, Items WHERE OrderedItems.ordersID = " + ordersID + ") WHERE ID = " + ordersID);
-            statement.executeUpdate("UPDATE Orders SET total = IF ( total>10000, total*9/10, total) WHERE ID = " + ordersID);
+                    "UPDATE Orders SET total= (SELECT sum(price) FROM OrderedItems, Items WHERE OrderedItems.ordersID = " + ordersID + ") WHERE id = " + ordersID);
+            statement.executeUpdate("UPDATE Orders SET total = IF ( total>10000, total*9/10, total) WHERE id = " + ordersID);
         } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
         }
@@ -80,28 +80,28 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
     /**
      * adds a new order into the database
      *
-     * @return - orderID so the OrderItems' table can take multiple items with the same Orders' ID
+     * @return - orderID so the OrderItems' table can take multiple items with the same Orders' id
      */
     public int create() {
-        int ID = 0;
+        int id = 0;
         try (Statement statement = connection.createStatement()) {
             LOGGER.info("customerID:");
             int customersID = Utils.INPUT2.nextInt();
             statement.executeUpdate("INSERT INTO Orders(customersID) VALUES(" + customersID + ");");
             ResultSet resultSet = statement.executeQuery("SELECT * FROM Orders");
             while (resultSet.next()) {
-                ID = resultSet.getInt("ID");
+                id = resultSet.getInt("id");
             }
-            resultSet.close();
-        } catch (SQLException | InputMismatchException e) {
+        } catch (SQLException e) {
             LOGGER.debug(e.getStackTrace());
+        }catch (InputMismatchException i) {
+        	LOGGER.debug(i.getStackTrace());
         }
-        return ID;
+        return id;
     }
 
     /**
      * allows people to see all the orders that have been made
-     *
      * @return - Orders' table
      */
     public ResultSet read() {
@@ -110,10 +110,10 @@ public class MySQLOrdersDAO implements CreateReturn, Read {
             resultSet = statement
                     .executeQuery("SELECT * FROM Orders;");
             while (resultSet.next()) {
-                int ID = resultSet.getInt("ID");
+                int id = resultSet.getInt("id");
                 String custID = resultSet.getString("customersID");
                 String total = resultSet.getString("total");
-                LOGGER.info(ID + " | " + custID + " | " + total);
+                LOGGER.info(id + " | " + custID + " | " + total);
             }
         } catch (Exception e) {
             LOGGER.debug(e.getStackTrace());

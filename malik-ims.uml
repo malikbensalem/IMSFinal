@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_BoZQIE8TEeqmpt2mecgBkw" name="malik_ims">
+    <eAnnotations xmi:id="_B2XasE8TEeqmpt2mecgBkw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_B2XasU8TEeqmpt2mecgBkw" source="codegen">
+        <details xmi:id="_B2Xask8TEeqmpt2mecgBkw" key="codegenDirectory" value="/malik-ims/src/main/java"/>
+        <details xmi:id="_Cm5fwE8TEeqmpt2mecgBkw" key="AssociatedSourceCode" value="/malik-ims/src/main/java/com/qa/databases/daos/MySQLCustomerDAO.java;2719244790/1;/malik-ims/src/main/java/com/qa/databases/daos/MySQLItemsDAO.java;2009255206/1;/malik-ims/src/main/java/com/qa/databases/daos/MySQLOrderedItemsDAO.java;448289425/1;/malik-ims/src/main/java/com/qa/databases/daos/MySQLOrdersDAO.java;1027003960/1;/malik-ims/src/test/java/com/qa/databases/persistances/ControllerTest.java;4097936626/1;/malik-ims/src/main/java/com/qa/databases/interfaces/Create.java;2933585820/1;/malik-ims/src/main/java/com/qa/databases/interfaces/CreateParam.java;1290566755/1;/malik-ims/src/main/java/com/qa/databases/interfaces/CreateReturn.java;364026770/1;/malik-ims/src/main/java/com/qa/databases/interfaces/Delete.java;1016509442/1;/malik-ims/src/main/java/com/qa/databases/interfaces/Read.java;2539961940/1;/malik-ims/src/main/java/com/qa/databases/interfaces/Update.java;2254326640/1;/malik-ims/src/main/java/com/qa/databases/interfaces/UpdateParam.java;684518255/1;/malik-ims/src/main/java/com/qa/databases/interfaces/UpdateReturn.java;2742326381/1;/malik-ims/src/test/java/com/qa/databases/daos/MySQLCustomersDAOTest.java;1042253603/1;/malik-ims/src/main/java/com/qa/databases/persistances/Runner.java;2931667406/1;/malik-ims/src/main/java/com/qa/databases/persistances/Utils.java;2895071589/1;/malik-ims/src/main/java/com/qa/databases/persistances/Control.java;1624376406/1;/malik-ims/src/main/java/com/qa/databases/daos/MySQLUsersDAO.java;438374386/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_CJPTYE8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_CJPTYU8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_CJPTYk8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_CJP6cE8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_CJP6cU8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_CJP6ck8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_CJP6c08TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_CJP6dE8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_CJQhgE8TEeqmpt2mecgBkw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CIMxkE8TEeqmpt2mecgBkw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CIMxkU8TEeqmpt2mecgBkw" name="qa">
+        <packagedElement xmi:type="uml:Package" xmi:id="_CIMxkk8TEeqmpt2mecgBkw" name="databases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_CIQb8E8TEeqmpt2mecgBkw" name="interfaces">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKX70U8TEeqmpt2mecgBkw" name="Create">
+              <ownedComment xmi:id="_CNxOF08TEeqmpt2mecgBkw">
+                <body>create CRUD functionality</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKYi4E8TEeqmpt2mecgBkw" name="create"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKYi4U8TEeqmpt2mecgBkw" name="CreateParam">
+              <ownedComment xmi:id="_CNxOGE8TEeqmpt2mecgBkw">
+                <body>create CRUD functionality that allows for a parameter and int return type</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKZxAE8TEeqmpt2mecgBkw" name="create">
+                <ownedParameter xmi:id="_CKZxAU8TEeqmpt2mecgBkw" name="orderID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKZxAk8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKaYEE8TEeqmpt2mecgBkw" name="CreateReturn">
+              <ownedComment xmi:id="_CNxOGU8TEeqmpt2mecgBkw">
+                <body>create CRUD functionality that allows for int return type</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKa_IE8TEeqmpt2mecgBkw" name="create">
+                <ownedParameter xmi:id="_CKa_IU8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKbmME8TEeqmpt2mecgBkw" name="Delete">
+              <ownedComment xmi:id="_CNxOGk8TEeqmpt2mecgBkw">
+                <body>delete CRUD functionality</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKbmMU8TEeqmpt2mecgBkw" name="delete"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKcNQE8TEeqmpt2mecgBkw" name="Read">
+              <ownedComment xmi:id="_CNxOG08TEeqmpt2mecgBkw">
+                <body>read CRUD functionality</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKc0UE8TEeqmpt2mecgBkw" name="read">
+                <ownedParameter xmi:id="_CNIU4E8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKdbYE8TEeqmpt2mecgBkw" name="Update">
+              <ownedComment xmi:id="_CNxOHE8TEeqmpt2mecgBkw">
+                <body>update CRUD functionality</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKeCcE8TEeqmpt2mecgBkw" name="update"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKepgE8TEeqmpt2mecgBkw" name="UpdateParam">
+              <ownedOperation xmi:id="_CKfQkE8TEeqmpt2mecgBkw" name="update">
+                <ownedParameter xmi:id="_CKfQkU8TEeqmpt2mecgBkw" name="orderID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_CKf3oE8TEeqmpt2mecgBkw" name="UpdateReturn">
+              <ownedComment xmi:id="_CNx1IE8TEeqmpt2mecgBkw">
+                <body>update CRUD functionality that allows for int return type</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_CKgesE8TEeqmpt2mecgBkw" name="update">
+                <ownedParameter xmi:id="_CKgesU8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_CIS4ME8TEeqmpt2mecgBkw" name="persistances">
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKWGoE8TEeqmpt2mecgBkw" name="ControllerTest">
+              <eAnnotations xmi:id="_CKWtsE8TEeqmpt2mecgBkw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_CKWtsU8TEeqmpt2mecgBkw" source="codegen">
+                  <details xmi:id="_CKWtsk8TEeqmpt2mecgBkw" key="codegenDirectory" value="/malik-ims/src/test/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedOperation xmi:id="_CKWts08TEeqmpt2mecgBkw" name="chooseTableTest"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKi68E8TEeqmpt2mecgBkw" name="Runner">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNtjsk8TEeqmpt2mecgBkw" name="main" specification="_CKjiAE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNtjs08TEeqmpt2mecgBkw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNtjtE8TEeqmpt2mecgBkw" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>final Logger LOGGER = Logger.getLogger(Runner.class);&#xD;
+ 	   &#xD;
+ 	Control control = new Control();&#xD;
+     String cont = &quot;y&quot;;&#xD;
+     &#xD;
+     while (!cont.equals(&quot;n&quot;)) {&#xD;
+         control.menu();&#xD;
+         LOGGER.info(&quot;Do you want to continue(Y/N)?&quot;);&#xD;
+         cont = Utils.INPUT.nextLine().toLowerCase();&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CKjiAE8TEeqmpt2mecgBkw" name="main" isStatic="true" method="_CNtjsk8TEeqmpt2mecgBkw" raisedException="_CM8HoE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CKjiAU8TEeqmpt2mecgBkw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CKkJEE8TEeqmpt2mecgBkw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKkwIE8TEeqmpt2mecgBkw" name="Utils">
+              <ownedAttribute xmi:id="_CNXlcU8TEeqmpt2mecgBkw" name="INPUT" isLeaf="true" isStatic="true" type="_CMyWoE8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN6_EU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNXlck8TEeqmpt2mecgBkw" value="new Scanner(System.in)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNYMgE8TEeqmpt2mecgBkw" name="INPUT2" isLeaf="true" isStatic="true" type="_CMyWoE8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN7mIU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNYMgU8TEeqmpt2mecgBkw" value="new Scanner(System.in)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNYMgk8TEeqmpt2mecgBkw" name="INPUT3" isLeaf="true" isStatic="true" type="_CMyWoE8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN8NMU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNYMg08TEeqmpt2mecgBkw" value="new Scanner(System.in)"/>
+              </ownedAttribute>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKnMYE8TEeqmpt2mecgBkw" name="Control">
+              <ownedComment xmi:id="_CNx1IU8TEeqmpt2mecgBkw">
+                <body>this is the menu of the system</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNYMhE8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN80QU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNYzkE8TEeqmpt2mecgBkw" value="Logger.getLogger(Control.class)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNYzkU8TEeqmpt2mecgBkw" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNZaoE8TEeqmpt2mecgBkw" name="pWord" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNZaok8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN9bUU8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNuKwE8TEeqmpt2mecgBkw" name="Control" specification="_CKpBkE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNuKwU8TEeqmpt2mecgBkw" type="_CKnMYE8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+		this.name = Utils.INPUT.nextLine();&#xD;
+		LOGGER.info(&quot;password:&quot;);&#xD;
+		this.pWord = Utils.INPUT.nextLine();&#xD;
+		try {&#xD;
+			this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNuKwk8TEeqmpt2mecgBkw" name="menu" specification="_CKpooE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>choose(chooseCRUD(chooseTable()));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNuKw08TEeqmpt2mecgBkw" name="chooseTable" specification="_CKpooU8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNuKxE8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>LOGGER.info(&quot;What would you like to access?\n1.Customers\n2.Items\n3.Orders\n4.Users&quot;);&#xD;
+		String f = Utils.INPUT.nextLine();&#xD;
+		return f;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNuKxU8TEeqmpt2mecgBkw" name="chooseCRUD" specification="_CKqPsE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNuKxk8TEeqmpt2mecgBkw" name="f">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNuKx08TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>LOGGER.info(&quot;What would you like to access?\n1.Create\n2.Read\n3.Update\n4.Delete&quot;);&#xD;
+		f += Utils.INPUT.nextLine();&#xD;
+		return f;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNuKyE8TEeqmpt2mecgBkw" name="choose" specification="_CKq2wE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNuKyU8TEeqmpt2mecgBkw" name="f">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (f.equals(&quot;11&quot;)) {&#xD;
+			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);&#xD;
+			custConnection.create();&#xD;
+			custConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;12&quot;)) {&#xD;
+			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);&#xD;
+			custConnection.read();&#xD;
+			custConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;13&quot;)) {&#xD;
+			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);&#xD;
+			custConnection.update();&#xD;
+			custConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;14&quot;)) {&#xD;
+			MySQLCustomerDAO custConnection = new MySQLCustomerDAO(name, pWord);&#xD;
+			custConnection.delete();&#xD;
+			custConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;21&quot;)) {&#xD;
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);&#xD;
+			itemConnection.create();&#xD;
+			itemConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;22&quot;)) {&#xD;
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);&#xD;
+			itemConnection.read();&#xD;
+			itemConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;23&quot;)) {&#xD;
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);&#xD;
+			itemConnection.update();&#xD;
+			itemConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;24&quot;)) {&#xD;
+			MySQLItemsDAO itemConnection = new MySQLItemsDAO(name, pWord);&#xD;
+			itemConnection.delete();&#xD;
+			itemConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;31&quot;)) {&#xD;
+			MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);&#xD;
+			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);&#xD;
+			orderConnection.addTotal(oiConnection.create(orderConnection.create()));&#xD;
+			oiConnection.closeConnection();&#xD;
+			orderConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;32&quot;)) {&#xD;
+			LOGGER.info(&quot;1.All orders\n2.Details of specific order&quot;);&#xD;
+			String pick = Utils.INPUT.nextLine();&#xD;
+			if (pick.equals(&quot;1&quot;)) {&#xD;
+				MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);&#xD;
+				orderConnection.read();&#xD;
+				orderConnection.closeConnection();&#xD;
+			} else if (pick.equals(&quot;2&quot;)) {&#xD;
+				MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);&#xD;
+				oiConnection.read();&#xD;
+				oiConnection.closeConnection();&#xD;
+			}&#xD;
+		} else if (f.equals(&quot;33&quot;)) {&#xD;
+			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);&#xD;
+			MySQLOrdersDAO orderConnection = new MySQLOrdersDAO(name, pWord);&#xD;
+			orderConnection.addTotal(oiConnection.update());&#xD;
+			oiConnection.closeConnection();&#xD;
+			orderConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;34&quot;)) {&#xD;
+			MySQLOrderedItemsDAO oiConnection = new MySQLOrderedItemsDAO(name, pWord);&#xD;
+			oiConnection.delete();&#xD;
+			oiConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;41&quot;)) {&#xD;
+			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);&#xD;
+			userConnection.create();&#xD;
+			userConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;42&quot;)) {&#xD;
+			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);&#xD;
+			userConnection.read();&#xD;
+			userConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;43&quot;)) {&#xD;
+			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);&#xD;
+			userConnection.update();&#xD;
+			userConnection.closeConnection();&#xD;
+		} else if (f.equals(&quot;44&quot;)) {&#xD;
+			MySQLUsersDAO userConnection = new MySQLUsersDAO(name, pWord);&#xD;
+			userConnection.delete();&#xD;
+			userConnection.closeConnection();&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CKpBkE8TEeqmpt2mecgBkw" name="Control" method="_CNuKwE8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CKpBkU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CKpBkk8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNx1Ik8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during&#xD;
+	 * the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKpBk08TEeqmpt2mecgBkw" type="_CKnMYE8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKpooE8TEeqmpt2mecgBkw" name="menu" method="_CNuKwk8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1I08TEeqmpt2mecgBkw">
+                  <body>displays the menu</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKpooU8TEeqmpt2mecgBkw" name="chooseTable" method="_CNuKw08TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1JE8TEeqmpt2mecgBkw">
+                  <body>which table do you want to use?&#xD;
+	 *&#xD;
+	 * @return - passes input onto chooseCRUD method</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKpook8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKqPsE8TEeqmpt2mecgBkw" name="chooseCRUD" method="_CNuKxU8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1JU8TEeqmpt2mecgBkw">
+                  <body>which CRUD do you want to use?&#xD;
+	 *&#xD;
+	 * @param f - chooseTable input&#xD;
+	 * @return - completed user's input</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKqPsU8TEeqmpt2mecgBkw" name="f">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKqPsk8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKq2wE8TEeqmpt2mecgBkw" name="choose" method="_CNuKyE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1Jk8TEeqmpt2mecgBkw">
+                  <body>picks the corresponding functionality depending on input&#xD;
+	 *&#xD;
+	 * @param f - determines which functionality will be used</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKq2wU8TEeqmpt2mecgBkw" name="f">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN6_EU8TEeqmpt2mecgBkw" name="" memberEnd="_CN6_Ek8TEeqmpt2mecgBkw _CNXlcU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN6_Ek8TEeqmpt2mecgBkw" name="" type="_CKkwIE8TEeqmpt2mecgBkw" association="_CN6_EU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN7mIU8TEeqmpt2mecgBkw" name="" memberEnd="_CN7mIk8TEeqmpt2mecgBkw _CNYMgE8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN7mIk8TEeqmpt2mecgBkw" name="" type="_CKkwIE8TEeqmpt2mecgBkw" association="_CN7mIU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN8NMU8TEeqmpt2mecgBkw" name="" memberEnd="_CN8NMk8TEeqmpt2mecgBkw _CNYMgk8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN8NMk8TEeqmpt2mecgBkw" name="" type="_CKkwIE8TEeqmpt2mecgBkw" association="_CN8NMU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN80QU8TEeqmpt2mecgBkw" name="" memberEnd="_CN80Qk8TEeqmpt2mecgBkw _CNYMhE8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN80Qk8TEeqmpt2mecgBkw" name="" type="_CKnMYE8TEeqmpt2mecgBkw" association="_CN80QU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN9bUU8TEeqmpt2mecgBkw" name="" memberEnd="_CN9bUk8TEeqmpt2mecgBkw _CNZaok8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN9bUk8TEeqmpt2mecgBkw" name="" type="_CKnMYE8TEeqmpt2mecgBkw" association="_CN9bUU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_CIcpME8TEeqmpt2mecgBkw" name="daos">
+            <packagedElement xmi:type="uml:Class" xmi:id="_CJKa4E8TEeqmpt2mecgBkw" name="MySQLCustomerDAO">
+              <ownedComment xmi:id="_CNv_8E8TEeqmpt2mecgBkw">
+                <body>this class allows a connection between java and the Customers' table</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNQ3wE8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN1fgE8TEeqmpt2mecgBkw"/>
+              <ownedAttribute xmi:id="_CNRe0U8TEeqmpt2mecgBkw" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNSF4U8TEeqmpt2mecgBkw" name="pWord" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNSs8E8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN2GkU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNSs8U8TEeqmpt2mecgBkw" value="Logger.getLogger(MySQLCustomerDAO.class)"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_CMusQE8TEeqmpt2mecgBkw" client="_CJKa4E8TEeqmpt2mecgBkw" supplier="_CKX70U8TEeqmpt2mecgBkw" contract="_CKX70U8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CMv6YE8TEeqmpt2mecgBkw" client="_CJKa4E8TEeqmpt2mecgBkw" supplier="_CKcNQE8TEeqmpt2mecgBkw" contract="_CKcNQE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CMv6YU8TEeqmpt2mecgBkw" client="_CJKa4E8TEeqmpt2mecgBkw" supplier="_CKdbYE8TEeqmpt2mecgBkw" contract="_CKdbYE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CMwhcE8TEeqmpt2mecgBkw" client="_CJKa4E8TEeqmpt2mecgBkw" supplier="_CKbmME8TEeqmpt2mecgBkw" contract="_CKbmME8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNm2AE8TEeqmpt2mecgBkw" name="MySQLCustomerDAO" specification="_CJRvoE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNm2AU8TEeqmpt2mecgBkw" type="_CJKa4E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+		this.name = Utils.INPUT.nextLine();&#xD;
+		LOGGER.info(&quot;password:&quot;);&#xD;
+		this.pWord = Utils.INPUT.nextLine();&#xD;
+		try {&#xD;
+			this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+		} catch (Exception e) {&#xD;
+			for (StackTraceElement ele : e.getStackTrace()) {&#xD;
+				LOGGER.error(ele.toString());&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNp5UE8TEeqmpt2mecgBkw" name="MySQLCustomerDAO" specification="_CJZrcE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNp5UU8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNp5Uk8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNp5U08TEeqmpt2mecgBkw" type="_CJKa4E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>this.name = name;&#xD;
+		this.pWord = pWord;&#xD;
+		try {&#xD;
+			this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+		} catch (SQLException e) {&#xD;
+			for (StackTraceElement ele : e.getStackTrace()) {&#xD;
+				LOGGER.error(ele.toString());&#xD;
+			}&#xD;
+		}&#xD;
+		try (Statement statement = connection.createStatement()) {&#xD;
+		} catch (Exception e) {&#xD;
+			for (StackTraceElement ele : e.getStackTrace()) {&#xD;
+				LOGGER.error(ele.toString());&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNp5VE8TEeqmpt2mecgBkw" name="closeConnection" specification="_CJa5kE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try {&#xD;
+			connection.close();&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNqgYE8TEeqmpt2mecgBkw" name="create" specification="_CJa5kU8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try (Statement statement = connection.createStatement()) {&#xD;
+			LOGGER.info(&quot;First name:&quot;);&#xD;
+			String first = Utils.INPUT.nextLine();&#xD;
+			LOGGER.info(&quot;Last Name:&quot;);&#xD;
+			String last = Utils.INPUT.nextLine();&#xD;
+			statement.executeUpdate(&#xD;
+					&quot;INSERT INTO Customers(firstName,lastName) VALUES(\&quot;&quot; + first + &quot;\&quot;,\&quot;&quot; + last + &quot;\&quot;);&quot;);&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNqgYU8TEeqmpt2mecgBkw" name="update" specification="_CJcuwE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>MySQLUsersDAO ud = new MySQLUsersDAO(this.name, this.pWord);&#xD;
+		if (ud.authenticate()) {&#xD;
+			try (Statement statement = connection.createStatement()) {&#xD;
+				LOGGER.info(&quot;Customer id:&quot;);&#xD;
+				int id = Utils.INPUT2.nextInt();&#xD;
+				LOGGER.info(&quot;Change First Name to:&quot;);&#xD;
+				String first = Utils.INPUT.nextLine();&#xD;
+				LOGGER.info(&quot;Change Last Name to:&quot;);&#xD;
+				String last = Utils.INPUT.nextLine();&#xD;
+				statement.executeUpdate(&quot;UPDATE Customers SET firstName = \&quot;&quot; + first + &quot;\&quot;, lastName = \&quot;&quot; + last&#xD;
+						+ &quot;\&quot; WHERE id= &quot; + id + &quot;;&quot;);&#xD;
+			} catch (SQLException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			} catch (InputMismatchException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			}&#xD;
+		}&#xD;
+		ud.closeConnection();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNqgYk8TEeqmpt2mecgBkw" name="delete" specification="_CJdV0k8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>MySQLUsersDAO ud = new MySQLUsersDAO(this.name, this.pWord);&#xD;
+		if (ud.authenticate()) {&#xD;
+			try (Statement statement = connection.createStatement()) {&#xD;
+				LOGGER.info(&quot;Customer id:&quot;);&#xD;
+				int id = Utils.INPUT2.nextInt();&#xD;
+				statement.executeUpdate(&quot;DELETE FROM Customers WHERE id = &quot; + id + &quot;;&quot;);&#xD;
+			} catch (SQLException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			} catch (InputMismatchException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			}&#xD;
+&#xD;
+		}&#xD;
+		ud.closeConnection();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNqgY08TEeqmpt2mecgBkw" name="read" specification="_CJej8k8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNqgZE8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>ResultSet resultSet = null;&#xD;
+		try (Statement statement = connection.createStatement()) {&#xD;
+			resultSet = statement.executeQuery(&quot;SELECT * FROM Customers;&quot;);&#xD;
+			while (resultSet.next()) {&#xD;
+				int id = resultSet.getInt(&quot;id&quot;);&#xD;
+				String firstName = resultSet.getString(&quot;firstName&quot;);&#xD;
+				String lastName = resultSet.getString(&quot;lastName&quot;);&#xD;
+				LOGGER.info(id + &quot; | &quot; + firstName + &quot; | &quot; + lastName);&#xD;
+			}&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+		return resultSet;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CJRvoE8TEeqmpt2mecgBkw" name="MySQLCustomerDAO" method="_CNm2AE8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJZEYE8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJZEYU8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNv_8U8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during&#xD;
+	 * the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJZEYk8TEeqmpt2mecgBkw" type="_CJKa4E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJZrcE8TEeqmpt2mecgBkw" name="MySQLCustomerDAO" method="_CNp5UE8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJaSgk8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJaSg08TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNv_8k8TEeqmpt2mecgBkw">
+                  <body>use this constructor if you have already got access to the database&#xD;
+	 *&#xD;
+	 * @param name  - database name&#xD;
+	 * @param pWord - database password</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJaSgE8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJaSgU8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJaShE8TEeqmpt2mecgBkw" type="_CJKa4E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJa5kE8TEeqmpt2mecgBkw" name="closeConnection" method="_CNp5VE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNv_808TEeqmpt2mecgBkw">
+                  <body>closes this DAO down when called</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJa5kU8TEeqmpt2mecgBkw" name="create" method="_CNqgYE8TEeqmpt2mecgBkw"/>
+              <ownedOperation xmi:id="_CJcuwE8TEeqmpt2mecgBkw" name="update" method="_CNqgYU8TEeqmpt2mecgBkw"/>
+              <ownedOperation xmi:id="_CJdV0k8TEeqmpt2mecgBkw" name="delete" method="_CNqgYk8TEeqmpt2mecgBkw"/>
+              <ownedOperation xmi:id="_CJej8k8TEeqmpt2mecgBkw" name="read" method="_CNqgY08TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNFRkE8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CJjccE8TEeqmpt2mecgBkw" name="MySQLItemsDAO">
+              <ownedComment xmi:id="_CNv_9E8TEeqmpt2mecgBkw">
+                <body>this class allows a connection between java and the Items' table</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNTUAE8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN2toU8TEeqmpt2mecgBkw"/>
+              <ownedAttribute xmi:id="_CNTUAk8TEeqmpt2mecgBkw" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNT7EU8TEeqmpt2mecgBkw" name="pWord" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNUiIU8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN3UsU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNUiIk8TEeqmpt2mecgBkw" value="Logger.getLogger(MySQLItemsDAO.class)"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_CMzkwE8TEeqmpt2mecgBkw" client="_CJjccE8TEeqmpt2mecgBkw" supplier="_CKX70U8TEeqmpt2mecgBkw" contract="_CKX70U8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CMzkwU8TEeqmpt2mecgBkw" client="_CJjccE8TEeqmpt2mecgBkw" supplier="_CKcNQE8TEeqmpt2mecgBkw" contract="_CKcNQE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CMzkwk8TEeqmpt2mecgBkw" client="_CJjccE8TEeqmpt2mecgBkw" supplier="_CKdbYE8TEeqmpt2mecgBkw" contract="_CKdbYE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CM0L0E8TEeqmpt2mecgBkw" client="_CJjccE8TEeqmpt2mecgBkw" supplier="_CKbmME8TEeqmpt2mecgBkw" contract="_CKbmME8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrHcE8TEeqmpt2mecgBkw" name="MySQLItemsDAO" specification="_CJlRoE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNrHcU8TEeqmpt2mecgBkw" type="_CJjccE8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+		this.name = Utils.INPUT.nextLine();&#xD;
+		LOGGER.info(&quot;password:&quot;);&#xD;
+		this.pWord = Utils.INPUT.nextLine();&#xD;
+		try {&#xD;
+			this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrHck8TEeqmpt2mecgBkw" name="MySQLItemsDAO" specification="_CJl4sE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNrHc08TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNrHdE8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNrHdU8TEeqmpt2mecgBkw" type="_CJjccE8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>this.name = name;&#xD;
+		this.pWord = pWord;&#xD;
+		try {&#xD;
+			this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrHdk8TEeqmpt2mecgBkw" name="create" specification="_CJmfw08TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>MySQLUsersDAO ud = new MySQLUsersDAO(name, pWord);&#xD;
+		if (ud.authenticate()) {&#xD;
+			try (Statement statement = connection.createStatement()) {&#xD;
+				Scanner input = new Scanner(System.in);&#xD;
+				LOGGER.info(&quot;Item name:&quot;);&#xD;
+				String name = Utils.INPUT.nextLine();&#xD;
+				LOGGER.info(&quot;Price:&quot;);&#xD;
+				float price = Utils.INPUT3.nextFloat();&#xD;
+				statement.executeUpdate(&quot;INSERT INTO Items (iName,price) VALUES( \&quot;&quot; + name + &quot;\&quot;, &quot; + price + &quot;);&quot;);&#xD;
+			} catch (SQLException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			} catch (InputMismatchException i) {&#xD;
+				LOGGER.debug(i.getStackTrace());&#xD;
+			}&#xD;
+		}&#xD;
+		ud.closeConnection();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrHd08TEeqmpt2mecgBkw" name="update" specification="_CJnG0E8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>MySQLUsersDAO ud = new MySQLUsersDAO(name, pWord);&#xD;
+		if (ud.authenticate()) {&#xD;
+			try (Statement statement = connection.createStatement()) {&#xD;
+				LOGGER.info(&quot;Item id:&quot;);&#xD;
+				int id = Utils.INPUT2.nextInt();&#xD;
+				LOGGER.info(&quot;New Item name:&quot;);&#xD;
+				String name = Utils.INPUT.nextLine();&#xD;
+				LOGGER.info(&quot;New Price:&quot;);&#xD;
+				float price = Utils.INPUT3.nextFloat();&#xD;
+				statement.executeUpdate(&quot;UPDATE Items(name,price) SET iName = \&quot;&quot; + name + &quot;\&quot;, price = &quot; + price&#xD;
+						+ &quot; WHERE id= &quot; + id + &quot;;&quot;);&#xD;
+			} catch (SQLException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			} catch (InputMismatchException i) {&#xD;
+				LOGGER.debug(i.getStackTrace());&#xD;
+			}&#xD;
+		}&#xD;
+		ud.closeConnection();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrHeE8TEeqmpt2mecgBkw" name="delete" specification="_CJnG0U8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>MySQLUsersDAO ud = new MySQLUsersDAO(name, pWord);&#xD;
+		if (ud.authenticate()) {&#xD;
+			try (Statement statement = connection.createStatement()) {&#xD;
+				LOGGER.info(&quot;Item id:&quot;);&#xD;
+				int id = Utils.INPUT2.nextInt();&#xD;
+				statement.executeUpdate(&quot;DELETE FROM Items WHERE id = &quot; + id + &quot;;&quot;);&#xD;
+			} catch (SQLException e) {&#xD;
+				LOGGER.debug(e.getStackTrace());&#xD;
+			}&#xD;
+		}&#xD;
+		ud.closeConnection();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrugE8TEeqmpt2mecgBkw" name="read" specification="_CJnG0k8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNrugU8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>ResultSet resultSet = null;&#xD;
+		try (Statement statement = connection.createStatement()) {&#xD;
+			resultSet = statement.executeQuery(&quot;SELECT * FROM Items;&quot;);&#xD;
+			while (resultSet.next()) {&#xD;
+				int id = resultSet.getInt(&quot;id&quot;);&#xD;
+				String name = resultSet.getString(&quot;iName&quot;);&#xD;
+				String price = resultSet.getString(&quot;price&quot;);&#xD;
+				LOGGER.info(id + &quot; | &quot; + name + &quot; | &quot; + price);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+		return resultSet;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrugk8TEeqmpt2mecgBkw" name="closeConnection" specification="_CJoU8E8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try {&#xD;
+			connection.close();&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e.getStackTrace());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CJlRoE8TEeqmpt2mecgBkw" name="MySQLItemsDAO" method="_CNrHcE8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJlRoU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJlRok8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNwnAE8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during&#xD;
+	 * the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJlRo08TEeqmpt2mecgBkw" type="_CJjccE8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJl4sE8TEeqmpt2mecgBkw" name="MySQLItemsDAO" method="_CNrHck8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJmfwE8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJmfwU8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNwnAU8TEeqmpt2mecgBkw">
+                  <body>use this constructor if you have already got access to the database&#xD;
+	 *&#xD;
+	 * @param name  - database name&#xD;
+	 * @param pWord - database password</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJl4sU8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJl4sk8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJmfwk8TEeqmpt2mecgBkw" type="_CJjccE8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJmfw08TEeqmpt2mecgBkw" name="create" method="_CNrHdk8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnAk8TEeqmpt2mecgBkw">
+                  <body>adds an item to the database (authorisation needed)</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJnG0E8TEeqmpt2mecgBkw" name="update" method="_CNrHd08TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnA08TEeqmpt2mecgBkw">
+                  <body>allows you change the name and a price of an item (authorisation needed)</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJnG0U8TEeqmpt2mecgBkw" name="delete" method="_CNrHeE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnBE8TEeqmpt2mecgBkw">
+                  <body>allows you to delete an item in the database (authorisation needed)</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJnG0k8TEeqmpt2mecgBkw" name="read" method="_CNrugE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnBU8TEeqmpt2mecgBkw">
+                  <body>allows people to see all items in the database&#xD;
+	 *&#xD;
+	 * @return - Items' table</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CNGfsE8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJoU8E8TEeqmpt2mecgBkw" name="closeConnection" method="_CNrugk8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnBk8TEeqmpt2mecgBkw">
+                  <body>closes this DAO down when called</body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CJrYQE8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO">
+              <ownedComment xmi:id="_CNwnB08TEeqmpt2mecgBkw">
+                <body>this class allows a connection between java and the OrderedItems' table</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNVJME8TEeqmpt2mecgBkw" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNVJMk8TEeqmpt2mecgBkw" name="pWord" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_CNVwQU8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN37wU8TEeqmpt2mecgBkw"/>
+              <ownedAttribute xmi:id="_CNWXUU8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN5J4E8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNWXUk8TEeqmpt2mecgBkw" value="Logger.getLogger(MySQLOrderedItemsDAO.class)"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_CM1Z8E8TEeqmpt2mecgBkw" client="_CJrYQE8TEeqmpt2mecgBkw" supplier="_CKYi4U8TEeqmpt2mecgBkw" contract="_CKYi4U8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CM2BAE8TEeqmpt2mecgBkw" client="_CJrYQE8TEeqmpt2mecgBkw" supplier="_CKf3oE8TEeqmpt2mecgBkw" contract="_CKf3oE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CM2BAU8TEeqmpt2mecgBkw" client="_CJrYQE8TEeqmpt2mecgBkw" supplier="_CKbmME8TEeqmpt2mecgBkw" contract="_CKbmME8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNrug08TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO" specification="_CJtNcE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNruhE8TEeqmpt2mecgBkw" type="_CJrYQE8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+     String name = Utils.INPUT.nextLine();&#xD;
+     LOGGER.info(&quot;password:&quot;);&#xD;
+     String pWord = Utils.INPUT.nextLine();&#xD;
+     this.name = name;&#xD;
+     this.pWord = pWord;&#xD;
+     try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNruhU8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO" specification="_CJt0gE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNruhk8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNruh08TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNruiE8TEeqmpt2mecgBkw" type="_CJrYQE8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>this.name = name;&#xD;
+     this.pWord = pWord;&#xD;
+     try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNsVkE8TEeqmpt2mecgBkw" name="closeConnection" specification="_CJubkE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try {&#xD;
+         connection.close();&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNsVkU8TEeqmpt2mecgBkw" name="create" specification="_CJubkU8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNsVkk8TEeqmpt2mecgBkw" name="ordersID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNsVk08TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int itemsID = -1;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         LOGGER.info(&quot;Item's id: \n(press 0 once you are done)&quot;);&#xD;
+         while (true) {&#xD;
+             itemsID = Utils.INPUT2.nextInt();&#xD;
+             if (itemsID &lt;= 0) {&#xD;
+                 break;&#xD;
+             }&#xD;
+             statement.executeUpdate(&#xD;
+                     &quot;INSERT INTO OrderedItems (ordersID,itemsID) VALUES(&quot; + ordersID + &quot;, &quot; + itemsID + &quot;);&quot;);&#xD;
+             LOGGER.info(&quot;>&quot;);&#xD;
+         }&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     } catch (InputMismatchException i) {&#xD;
+     	LOGGER.debug(i.getStackTrace());&#xD;
+     }&#xD;
+     return ordersID;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNsVlE8TEeqmpt2mecgBkw" name="read" specification="_CJvCok8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNsVlU8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>ResultSet resultSet = null;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         LOGGER.info(&quot;OrderID:&quot;);&#xD;
+         int oID = Utils.INPUT2.nextInt();&#xD;
+         resultSet = statement&#xD;
+                 .executeQuery(&quot;SELECT * FROM OrderedItems WHERE ordersID = &quot; + oID + &quot;;&quot;);&#xD;
+         while (resultSet.next()) {&#xD;
+             int id = resultSet.getInt(&quot;id&quot;);&#xD;
+             int itemsID = resultSet.getInt(&quot;itemsID&quot;);&#xD;
+             int ordersID = resultSet.getInt(&quot;ordersID&quot;);&#xD;
+             LOGGER.info(id + &quot; | &quot; + itemsID + &quot; | &quot; + ordersID);&#xD;
+         }&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+     return resultSet;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNsVlk8TEeqmpt2mecgBkw" name="update" specification="_CJvpsE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNsVl08TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int ordersID = -1;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         LOGGER.info(&quot;order's id to be changed:&quot;);&#xD;
+         ordersID = Utils.INPUT2.nextInt();&#xD;
+         LOGGER.info(&quot;Item's id to be changed:&quot;);&#xD;
+         int oldItem = Utils.INPUT2.nextInt();&#xD;
+         LOGGER.info(&quot;new Item's id:&quot;);&#xD;
+         int newItem = Utils.INPUT2.nextInt();&#xD;
+         statement.executeUpdate(&quot;UPDATE OrderedItems SET ItemsID = &quot; + newItem + &quot; WHERE ItemsID = &quot; + oldItem&#xD;
+                 + &quot;AND ordersID = &quot; + ordersID + &quot;;&quot;);&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }catch (InputMismatchException i) {&#xD;
+     	LOGGER.debug(i.getStackTrace());&#xD;
+     }&#xD;
+     return ordersID;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNsVmE8TEeqmpt2mecgBkw" name="delete" specification="_CJvpsk8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try (Statement statement = connection.createStatement()) {&#xD;
+         LOGGER.info(&quot;OrderID:&quot;);&#xD;
+         int orderID = Utils.INPUT2.nextInt();&#xD;
+         statement.executeUpdate(&quot;DELETE FROM OrderedItems WHERE OrdersID = &quot; + orderID + &quot;;&quot;);&#xD;
+         MySQLOrdersDAO o = new MySQLOrdersDAO(name, pWord);&#xD;
+         o.addTotal(orderID);&#xD;
+&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }catch (InputMismatchException i) {&#xD;
+     	LOGGER.debug(i.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CJtNcE8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO" method="_CNrug08TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJtNcU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJtNck8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNwnCE8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJtNc08TEeqmpt2mecgBkw" type="_CJrYQE8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJt0gE8TEeqmpt2mecgBkw" name="MySQLOrderedItemsDAO" method="_CNruhU8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CJt0g08TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CJt0hE8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNwnCU8TEeqmpt2mecgBkw">
+                  <body>use this constructor if you have already got access to the database&#xD;
+     *&#xD;
+     * @param name  - database name&#xD;
+     * @param pWord - database password</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJt0gU8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJt0gk8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJt0hU8TEeqmpt2mecgBkw" type="_CJrYQE8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJubkE8TEeqmpt2mecgBkw" name="closeConnection" method="_CNsVkE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnCk8TEeqmpt2mecgBkw">
+                  <body>closes this DAO down when called</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJubkU8TEeqmpt2mecgBkw" name="create" method="_CNsVkU8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnC08TEeqmpt2mecgBkw">
+                  <body>allows customers to add orders to there basket&#xD;
+     *&#xD;
+     * @param ordersID - this will be order number of the order&#xD;
+     * @return - this will return the OrdersID so that total amount can be calculated for this specific order</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJvCoE8TEeqmpt2mecgBkw" name="ordersID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CJvCoU8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJvCok8TEeqmpt2mecgBkw" name="read" method="_CNsVlE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnDE8TEeqmpt2mecgBkw">
+                  <body>shows the details of a specific order that a customer has made&#xD;
+     *&#xD;
+     * @return - specific customer's order</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CNHGwE8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJvpsE8TEeqmpt2mecgBkw" name="update" method="_CNsVlk8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnDU8TEeqmpt2mecgBkw">
+                  <body>allows customer to change there item&#xD;
+     *&#xD;
+     * @return</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CJvpsU8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CJvpsk8TEeqmpt2mecgBkw" name="delete" method="_CNsVmE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNwnDk8TEeqmpt2mecgBkw">
+                  <body>deletes an item from an order</body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKOK0E8TEeqmpt2mecgBkw" name="MySQLOrdersDAO">
+              <ownedComment xmi:id="_CNxOEE8TEeqmpt2mecgBkw">
+                <body>this class allows a connection between java and the Orders' table</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNW-YE8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN5w8E8TEeqmpt2mecgBkw"/>
+              <ownedAttribute xmi:id="_CNW-Yk8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN6YAU8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNXlcE8TEeqmpt2mecgBkw" value="Logger.getLogger(MySQLOrdersDAO.class)"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_CM32ME8TEeqmpt2mecgBkw" client="_CKOK0E8TEeqmpt2mecgBkw" supplier="_CKaYEE8TEeqmpt2mecgBkw" contract="_CKaYEE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CM32MU8TEeqmpt2mecgBkw" client="_CKOK0E8TEeqmpt2mecgBkw" supplier="_CKcNQE8TEeqmpt2mecgBkw" contract="_CKcNQE8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNs8oE8TEeqmpt2mecgBkw" name="MySQLOrdersDAO" specification="_CKQAAE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNs8oU8TEeqmpt2mecgBkw" type="_CKOK0E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+     String name = Utils.INPUT.nextLine();&#xD;
+     LOGGER.info(&quot;password:&quot;);&#xD;
+     String pWord = Utils.INPUT.nextLine();&#xD;
+     try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNs8ok8TEeqmpt2mecgBkw" name="MySQLOrdersDAO" specification="_CKQnEE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNs8o08TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNs8pE8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNs8pU8TEeqmpt2mecgBkw" type="_CKOK0E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNs8pk8TEeqmpt2mecgBkw" name="closeConnection" specification="_CKROJE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try {&#xD;
+         connection.close();&#xD;
+     } catch (SQLException e) {&#xD;
+         // TODO Auto-generated catch block&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNs8p08TEeqmpt2mecgBkw" name="addTotal" specification="_CKScQE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNs8qE8TEeqmpt2mecgBkw" name="ordersID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//ordersid be where?&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         statement.executeUpdate(&#xD;
+                 &quot;UPDATE Orders SET total= (SELECT sum(price) FROM OrderedItems, Items WHERE OrderedItems.ordersID = &quot; + ordersID + &quot;) WHERE id = &quot; + ordersID);&#xD;
+         statement.executeUpdate(&quot;UPDATE Orders SET total = IF ( total>10000, total*9/10, total) WHERE id = &quot; + ordersID);&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNs8qU8TEeqmpt2mecgBkw" name="create" specification="_CKScQk8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNs8qk8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int id = 0;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         LOGGER.info(&quot;customerID:&quot;);&#xD;
+         int customersID = Utils.INPUT2.nextInt();&#xD;
+         statement.executeUpdate(&quot;INSERT INTO Orders(customersID) VALUES(&quot; + customersID + &quot;);&quot;);&#xD;
+         ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM Orders&quot;);&#xD;
+         while (resultSet.next()) {&#xD;
+             id = resultSet.getInt(&quot;id&quot;);&#xD;
+         }&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }catch (InputMismatchException i) {&#xD;
+     	LOGGER.debug(i.getStackTrace());&#xD;
+     }&#xD;
+     return id;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNtjsE8TEeqmpt2mecgBkw" name="read" specification="_CKTDUU8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNtjsU8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>ResultSet resultSet = null;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         resultSet = statement&#xD;
+                 .executeQuery(&quot;SELECT * FROM Orders;&quot;);&#xD;
+         while (resultSet.next()) {&#xD;
+             int id = resultSet.getInt(&quot;id&quot;);&#xD;
+             String custID = resultSet.getString(&quot;customersID&quot;);&#xD;
+             String total = resultSet.getString(&quot;total&quot;);&#xD;
+             LOGGER.info(id + &quot; | &quot; + custID + &quot; | &quot; + total);&#xD;
+         }&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+     return resultSet;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CKQAAE8TEeqmpt2mecgBkw" name="MySQLOrdersDAO" method="_CNs8oE8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CKQAAU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CKQAAk8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNxOEU8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKQAA08TEeqmpt2mecgBkw" type="_CKOK0E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKQnEE8TEeqmpt2mecgBkw" name="MySQLOrdersDAO" method="_CNs8ok8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CKROIU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CKROIk8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNxOEk8TEeqmpt2mecgBkw">
+                  <body>use this constructor if you have already got access to the database&#xD;
+     *&#xD;
+     * @param name  - database name&#xD;
+     * @param pWord - database password</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKQnEU8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKROIE8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKROI08TEeqmpt2mecgBkw" type="_CKOK0E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKROJE8TEeqmpt2mecgBkw" name="closeConnection" method="_CNs8pk8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNxOE08TEeqmpt2mecgBkw">
+                  <body>closes this DAO down when called</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKScQE8TEeqmpt2mecgBkw" name="addTotal" method="_CNs8p08TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNxOFE8TEeqmpt2mecgBkw">
+                  <body>updates the total price the order&#xD;
+     *&#xD;
+     * @param ordersID - this will be the id you want to set the totol for</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKScQU8TEeqmpt2mecgBkw" name="ordersID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKScQk8TEeqmpt2mecgBkw" name="create" method="_CNs8qU8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNxOFU8TEeqmpt2mecgBkw">
+                  <body>adds a new order into the database&#xD;
+     *&#xD;
+     * @return - orderID so the OrderItems' table can take multiple items with the same Orders' id</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKTDUE8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKTDUU8TEeqmpt2mecgBkw" name="read" method="_CNtjsE8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNxOFk8TEeqmpt2mecgBkw">
+                  <body>allows people to see all the orders that have been made&#xD;
+     * @return - Orders' table</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CNHt0E8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKhFwE8TEeqmpt2mecgBkw" name="MySQLCustomersDAOTest">
+              <eAnnotations xmi:id="_CKhs0E8TEeqmpt2mecgBkw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_CKhs0U8TEeqmpt2mecgBkw" source="codegen">
+                  <details xmi:id="_CKhs0k8TEeqmpt2mecgBkw" key="codegenDirectory" value="/malik-ims/src/test/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedOperation xmi:id="_CKhs008TEeqmpt2mecgBkw" name="readTest"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CKsr8E8TEeqmpt2mecgBkw" name="MySQLUsersDAO">
+              <ownedComment xmi:id="_CNx1J08TEeqmpt2mecgBkw">
+                <body>this class allows a connection between java and the Users' table&#xD;
+(all methods in this class need authorisation by a user)</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_CNaBsU8TEeqmpt2mecgBkw" name="connection" visibility="private" type="_CM-j4E8TEeqmpt2mecgBkw" association="_CN-pcE8TEeqmpt2mecgBkw"/>
+              <ownedAttribute xmi:id="_CNaowU8TEeqmpt2mecgBkw" name="LOGGER" isLeaf="true" isStatic="true" type="_CMro8E8TEeqmpt2mecgBkw" isReadOnly="true" association="_CN_QgE8TEeqmpt2mecgBkw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_CNaowk8TEeqmpt2mecgBkw" value="Logger.getLogger(MySQLUsersDAO.class)"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_CNBAIE8TEeqmpt2mecgBkw" client="_CKsr8E8TEeqmpt2mecgBkw" supplier="_CKX70U8TEeqmpt2mecgBkw" contract="_CKX70U8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CNBnME8TEeqmpt2mecgBkw" client="_CKsr8E8TEeqmpt2mecgBkw" supplier="_CKcNQE8TEeqmpt2mecgBkw" contract="_CKcNQE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CNBnMU8TEeqmpt2mecgBkw" client="_CKsr8E8TEeqmpt2mecgBkw" supplier="_CKdbYE8TEeqmpt2mecgBkw" contract="_CKdbYE8TEeqmpt2mecgBkw"/>
+              <interfaceRealization xmi:id="_CNBnMk8TEeqmpt2mecgBkw" client="_CKsr8E8TEeqmpt2mecgBkw" supplier="_CKbmME8TEeqmpt2mecgBkw" contract="_CKbmME8TEeqmpt2mecgBkw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux0E8TEeqmpt2mecgBkw" name="MySQLUsersDAO" specification="_CKuhIE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNux0U8TEeqmpt2mecgBkw" type="_CKsr8E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>LOGGER.info(&quot;User:&quot;);&#xD;
+     String name = Utils.INPUT.nextLine();&#xD;
+     LOGGER.info(&quot;password:&quot;);&#xD;
+     String pWord = Utils.INPUT.nextLine();&#xD;
+     try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux0k8TEeqmpt2mecgBkw" name="MySQLUsersDAO" specification="_CKvIME8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNux008TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNux1E8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CNux1U8TEeqmpt2mecgBkw" type="_CKsr8E8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>try {&#xD;
+         this.connection = DriverManager.getConnection(&quot;jdbc:mysql://35.242.130.225/IMS&quot;, name, pWord);&#xD;
+     } catch (Exception e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux1k8TEeqmpt2mecgBkw" name="authenticate" specification="_CKvvRE8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNux108TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>LOGGER.info(&quot;Admin User:&quot;);&#xD;
+     String name = Utils.INPUT.nextLine();&#xD;
+     LOGGER.info(&quot;Admin password:&quot;);&#xD;
+     String pWord = Utils.INPUT.nextLine();&#xD;
+     ResultSet resultSet = null;&#xD;
+     try (Statement statement = connection.createStatement()) {&#xD;
+         resultSet = statement.executeQuery(&#xD;
+                 &quot;SELECT username FROM Users WHERE username = \&quot;&quot; + name + &quot;\&quot; AND pWord = \&quot;&quot; + pWord + &quot;\&quot;;&quot;);&#xD;
+         return resultSet.next();&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+     return false;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux2E8TEeqmpt2mecgBkw" name="create" specification="_CKwWUU8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>if (authenticate()) {&#xD;
+         try (Statement statement = connection.createStatement()) {&#xD;
+             LOGGER.info(&quot;New Username:&quot;);&#xD;
+             String name = Utils.INPUT.nextLine();&#xD;
+             LOGGER.info(&quot;password:&quot;);&#xD;
+             String pWord = Utils.INPUT.nextLine();&#xD;
+             statement.executeUpdate(&#xD;
+                     &quot;INSERT INTO Users(username,pWord) values(\&quot;&quot; + name + &quot;\&quot;, \&quot;&quot; + pWord + &quot;\&quot;);&quot;);&#xD;
+         } catch (SQLException e) {&#xD;
+             LOGGER.debug(e.getStackTrace());&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux2U8TEeqmpt2mecgBkw" name="update" specification="_CKwWUk8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>if (authenticate()) {&#xD;
+         try (Statement statement = connection.createStatement()) {&#xD;
+             LOGGER.info(&quot;Username you want to change the password for:&quot;);&#xD;
+             String name = Utils.INPUT.nextLine();&#xD;
+             LOGGER.info(&quot;New Password:&quot;);&#xD;
+             String pWord = Utils.INPUT.nextLine();&#xD;
+             statement&#xD;
+                     .executeUpdate(&quot;UPDATE Users SET pWord = \&quot;&quot; + pWord + &quot;\&quot; WHERE username = \&quot;&quot; + name + &quot;\&quot;;&quot;);&#xD;
+         } catch (SQLException e) {&#xD;
+             LOGGER.debug(e.getStackTrace());&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNux2k8TEeqmpt2mecgBkw" name="closeConnection" specification="_CKw9YE8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>try {&#xD;
+         connection.close();&#xD;
+     } catch (SQLException e) {&#xD;
+         LOGGER.debug(e.getStackTrace());&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNvY4E8TEeqmpt2mecgBkw" name="delete" specification="_CKw9YU8TEeqmpt2mecgBkw">
+                <language>java</language>
+                <body>if (authenticate()) {&#xD;
+         try (Statement statement = connection.createStatement()) {&#xD;
+             LOGGER.info(&quot;Item id:&quot;);&#xD;
+             String name = Utils.INPUT.nextLine();&#xD;
+             statement.executeUpdate(&quot;DELETE FROM Users WHERE username = \&quot;&quot; + name + &quot;\&quot;;&quot;);&#xD;
+         } catch (SQLException e) {&#xD;
+             LOGGER.debug(e.getStackTrace());&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CNvY4U8TEeqmpt2mecgBkw" name="read" specification="_CKw9Yk8TEeqmpt2mecgBkw">
+                <ownedParameter xmi:id="_CNvY4k8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+                <language>java</language>
+                <body>ResultSet resultSet = null;&#xD;
+     if (authenticate()) {&#xD;
+         try (Statement statement = connection.createStatement()) {&#xD;
+             resultSet = statement.executeQuery(&quot;SELECT * FROM Users;&quot;);&#xD;
+             while (resultSet.next()) {&#xD;
+                 String name = resultSet.getString(&quot;username&quot;);&#xD;
+                 String pWord = resultSet.getString(&quot;pWord&quot;);&#xD;
+                 LOGGER.info(name + &quot; | &quot; + pWord);&#xD;
+             }&#xD;
+         } catch (Exception e) {&#xD;
+             LOGGER.debug(e.getStackTrace());&#xD;
+         }&#xD;
+     }&#xD;
+     return resultSet;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_CKuhIE8TEeqmpt2mecgBkw" name="MySQLUsersDAO" method="_CNux0E8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CKuhIU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CKuhIk8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNx1KE8TEeqmpt2mecgBkw">
+                  <body>use this constructor if this is your first connection to the database during the run</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKuhI08TEeqmpt2mecgBkw" type="_CKsr8E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKvIME8TEeqmpt2mecgBkw" name="MySQLUsersDAO" method="_CNux0k8TEeqmpt2mecgBkw">
+                <eAnnotations xmi:id="_CKvvQU8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_CKvvQk8TEeqmpt2mecgBkw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_CNx1KU8TEeqmpt2mecgBkw">
+                  <body>use this constructor if you have already got access to the database&#xD;
+     *&#xD;
+     * @param name  - database name&#xD;
+     * @param pWord - database password</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKvIMU8TEeqmpt2mecgBkw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKvvQE8TEeqmpt2mecgBkw" name="pWord">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_CKvvQ08TEeqmpt2mecgBkw" type="_CKsr8E8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKvvRE8TEeqmpt2mecgBkw" name="authenticate" method="_CNux1k8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1Kk8TEeqmpt2mecgBkw">
+                  <body>needs a verified user to return true</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CKwWUE8TEeqmpt2mecgBkw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKwWUU8TEeqmpt2mecgBkw" name="create" method="_CNux2E8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1K08TEeqmpt2mecgBkw">
+                  <body>adds a user into the database</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKwWUk8TEeqmpt2mecgBkw" name="update" method="_CNux2U8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNx1LE8TEeqmpt2mecgBkw">
+                  <body>allows user to change password</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKw9YE8TEeqmpt2mecgBkw" name="closeConnection" method="_CNux2k8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNycME8TEeqmpt2mecgBkw">
+                  <body>closes this DAO down when called</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKw9YU8TEeqmpt2mecgBkw" name="delete" method="_CNvY4E8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNycMU8TEeqmpt2mecgBkw">
+                  <body>deletes a user from the database</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_CKw9Yk8TEeqmpt2mecgBkw" name="read" method="_CNvY4U8TEeqmpt2mecgBkw">
+                <ownedComment xmi:id="_CNycMk8TEeqmpt2mecgBkw">
+                  <body>allows users to see other users on the database&#xD;
+     *&#xD;
+     * @return - the users table</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_CNPpoE8TEeqmpt2mecgBkw" type="_CM65gU8TEeqmpt2mecgBkw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN1fgE8TEeqmpt2mecgBkw" name="" memberEnd="_CN1fgU8TEeqmpt2mecgBkw _CNQ3wE8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN1fgU8TEeqmpt2mecgBkw" name="" type="_CJKa4E8TEeqmpt2mecgBkw" association="_CN1fgE8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN2GkU8TEeqmpt2mecgBkw" name="" memberEnd="_CN2Gkk8TEeqmpt2mecgBkw _CNSs8E8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN2Gkk8TEeqmpt2mecgBkw" name="" type="_CJKa4E8TEeqmpt2mecgBkw" association="_CN2GkU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN2toU8TEeqmpt2mecgBkw" name="" memberEnd="_CN2tok8TEeqmpt2mecgBkw _CNTUAE8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN2tok8TEeqmpt2mecgBkw" name="" type="_CJjccE8TEeqmpt2mecgBkw" association="_CN2toU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN3UsU8TEeqmpt2mecgBkw" name="" memberEnd="_CN3Usk8TEeqmpt2mecgBkw _CNUiIU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN3Usk8TEeqmpt2mecgBkw" name="" type="_CJjccE8TEeqmpt2mecgBkw" association="_CN3UsU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN37wU8TEeqmpt2mecgBkw" name="" memberEnd="_CN37wk8TEeqmpt2mecgBkw _CNVwQU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN37wk8TEeqmpt2mecgBkw" name="" type="_CJrYQE8TEeqmpt2mecgBkw" association="_CN37wU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN5J4E8TEeqmpt2mecgBkw" name="" memberEnd="_CN5J4U8TEeqmpt2mecgBkw _CNWXUU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN5J4U8TEeqmpt2mecgBkw" name="" type="_CJrYQE8TEeqmpt2mecgBkw" association="_CN5J4E8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN5w8E8TEeqmpt2mecgBkw" name="" memberEnd="_CN5w8U8TEeqmpt2mecgBkw _CNW-YE8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN5w8U8TEeqmpt2mecgBkw" name="" type="_CKOK0E8TEeqmpt2mecgBkw" association="_CN5w8E8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN6YAU8TEeqmpt2mecgBkw" name="" memberEnd="_CN6YAk8TEeqmpt2mecgBkw _CNW-Yk8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN6YAk8TEeqmpt2mecgBkw" name="" type="_CKOK0E8TEeqmpt2mecgBkw" association="_CN6YAU8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN-pcE8TEeqmpt2mecgBkw" name="" memberEnd="_CN-pcU8TEeqmpt2mecgBkw _CNaBsU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN-pcU8TEeqmpt2mecgBkw" name="" type="_CKsr8E8TEeqmpt2mecgBkw" association="_CN-pcE8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_CN_QgE8TEeqmpt2mecgBkw" name="" memberEnd="_CN_QgU8TEeqmpt2mecgBkw _CNaowU8TEeqmpt2mecgBkw">
+              <ownedEnd xmi:id="_CN_QgU8TEeqmpt2mecgBkw" name="" type="_CKsr8E8TEeqmpt2mecgBkw" association="_CN_QgE8TEeqmpt2mecgBkw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CIS4MU8TEeqmpt2mecgBkw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CIS4Mk8TEeqmpt2mecgBkw" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CM65gU8TEeqmpt2mecgBkw" name="ResultSet"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CM8HoE8TEeqmpt2mecgBkw" name="SQLException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CM-j4E8TEeqmpt2mecgBkw" name="Connection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CM_K8U8TEeqmpt2mecgBkw" name="DriverManager"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CIUGUE8TEeqmpt2mecgBkw" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMqa0E8TEeqmpt2mecgBkw" name="InputMismatchException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMyWoE8TEeqmpt2mecgBkw" name="Scanner"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CIUtYE8TEeqmpt2mecgBkw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CIUtYU8TEeqmpt2mecgBkw" name="apache">
+        <packagedElement xmi:type="uml:Package" xmi:id="_CIUtYk8TEeqmpt2mecgBkw" name="log4j">
+          <packagedElement xmi:type="uml:Class" xmi:id="_CMro8E8TEeqmpt2mecgBkw" name="Logger"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CI2R0E8TEeqmpt2mecgBkw" name="junit">
+        <packagedElement xmi:type="uml:Class" xmi:id="_CM5EUE8TEeqmpt2mecgBkw" name="Assert"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CM6ScE8TEeqmpt2mecgBkw" name="Test"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_B2Z28E8TEeqmpt2mecgBkw">
+      <eAnnotations xmi:id="_B2c6QE8TEeqmpt2mecgBkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_B2q8sE8TEeqmpt2mecgBkw" base_Package="_BoZQIE8TEeqmpt2mecgBkw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CJbgoE8TEeqmpt2mecgBkw" base_Element="_CJa5kU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CJcHsE8TEeqmpt2mecgBkw" base_Element="_CJa5kU8TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CJcHsU8TEeqmpt2mecgBkw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CJcuwU8TEeqmpt2mecgBkw" base_Element="_CJcuwE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CJdV0E8TEeqmpt2mecgBkw" base_Element="_CJcuwE8TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CJdV0U8TEeqmpt2mecgBkw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CJd84E8TEeqmpt2mecgBkw" base_Element="_CJdV0k8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CJej8E8TEeqmpt2mecgBkw" base_Element="_CJdV0k8TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CJej8U8TEeqmpt2mecgBkw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CJfLAE8TEeqmpt2mecgBkw" base_Element="_CJej8k8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CJfyEE8TEeqmpt2mecgBkw" base_Element="_CJej8k8TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CJfyEU8TEeqmpt2mecgBkw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CKXUwE8TEeqmpt2mecgBkw" base_Element="_CKWts08TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CKXUwU8TEeqmpt2mecgBkw" base_Element="_CKWts08TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CKX70E8TEeqmpt2mecgBkw" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CKiT4E8TEeqmpt2mecgBkw" base_Element="_CKhs008TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Annotations xmi:id="_CKiT4U8TEeqmpt2mecgBkw" base_Element="_CKhs008TEeqmpt2mecgBkw">
+    <annotations xmi:id="_CKiT4k8TEeqmpt2mecgBkw" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_CMrB4E8TEeqmpt2mecgBkw" base_Element="_CMqa0E8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CMsQAE8TEeqmpt2mecgBkw" base_Element="_CMro8E8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CMy9sE8TEeqmpt2mecgBkw" base_Element="_CMyWoE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM5rYE8TEeqmpt2mecgBkw" base_Element="_CM5EUE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM65gE8TEeqmpt2mecgBkw" base_Element="_CM6ScE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM7gkE8TEeqmpt2mecgBkw" base_Element="_CM65gU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM8usE8TEeqmpt2mecgBkw" base_Element="_CM8HoE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM_K8E8TEeqmpt2mecgBkw" base_Element="_CM-j4E8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CM_yAE8TEeqmpt2mecgBkw" base_Element="_CM_K8U8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNRe0E8TEeqmpt2mecgBkw" base_Element="_CNQ3wE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNSF4E8TEeqmpt2mecgBkw" base_Element="_CNRe0U8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNSF4k8TEeqmpt2mecgBkw" base_Element="_CNSF4U8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNTUAU8TEeqmpt2mecgBkw" base_Element="_CNTUAE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNT7EE8TEeqmpt2mecgBkw" base_Element="_CNTUAk8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNUiIE8TEeqmpt2mecgBkw" base_Element="_CNT7EU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNVJMU8TEeqmpt2mecgBkw" base_Element="_CNVJME8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNVwQE8TEeqmpt2mecgBkw" base_Element="_CNVJMk8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNWXUE8TEeqmpt2mecgBkw" base_Element="_CNVwQU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNW-YU8TEeqmpt2mecgBkw" base_Element="_CNW-YE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNYzkk8TEeqmpt2mecgBkw" base_Element="_CNYzkU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNZaoU8TEeqmpt2mecgBkw" base_Element="_CNZaoE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNaBsE8TEeqmpt2mecgBkw" base_Element="_CNZaok8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_CNaowE8TEeqmpt2mecgBkw" base_Element="_CNaBsU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN2GkE8TEeqmpt2mecgBkw" base_Element="_CN1fgE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN2toE8TEeqmpt2mecgBkw" base_Element="_CN2GkU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN3UsE8TEeqmpt2mecgBkw" base_Element="_CN2toU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN37wE8TEeqmpt2mecgBkw" base_Element="_CN3UsU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN4i0E8TEeqmpt2mecgBkw" base_Element="_CN37wU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN5J4k8TEeqmpt2mecgBkw" base_Element="_CN5J4E8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN6YAE8TEeqmpt2mecgBkw" base_Element="_CN5w8E8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN6_EE8TEeqmpt2mecgBkw" base_Element="_CN6YAU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN7mIE8TEeqmpt2mecgBkw" base_Element="_CN6_EU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN8NME8TEeqmpt2mecgBkw" base_Element="_CN7mIU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN80QE8TEeqmpt2mecgBkw" base_Element="_CN8NMU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN9bUE8TEeqmpt2mecgBkw" base_Element="_CN80QU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN-CYE8TEeqmpt2mecgBkw" base_Element="_CN9bUU8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN-pck8TEeqmpt2mecgBkw" base_Element="_CN-pcE8TEeqmpt2mecgBkw"/>
+  <UMLLabProfile:Reference xmi:id="_CN_Qgk8TEeqmpt2mecgBkw" base_Element="_CN_QgE8TEeqmpt2mecgBkw"/>
+</xmi:XMI>
