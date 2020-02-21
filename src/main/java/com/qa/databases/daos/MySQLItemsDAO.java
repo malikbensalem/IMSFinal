@@ -90,7 +90,7 @@ public class MySQLItemsDAO implements Create, Read, Update, Delete {
 				String name = Utils.INPUT.nextLine();
 				LOGGER.info("New Price:");
 				float price = Utils.INPUT3.nextFloat();
-				statement.executeUpdate("UPDATE Items(name,price) SET iName = \"" + name + "\", price = " + price
+				statement.executeUpdate("UPDATE Items(iName,price) SET iName = \"" + name + "\", price = " + price
 						+ " WHERE id= " + id + ";");
 			} catch (SQLException e) {
 				LOGGER.debug(e.getStackTrace());
